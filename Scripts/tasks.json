@@ -1,0 +1,43 @@
+task specfic:
+
+task_config.yml
+{
+	tasks:
+	{
+		Image_Classification:
+		{
+			dataset:
+			Model:
+			acrch:
+			path
+
+		}
+		Automous_Driving:
+		{
+			dataset:
+			Model:
+			acrch:
+			path
+
+		}
+
+	}
+
+}
+
+result.yml
+
+
+//Tasks Specific json.. can be done for many iterations
+{
+   "toolName": "DeepXplore",
+   "description": "DL testing tool....",
+   "authors": "Din Lin",
+   "commands": "python command...",
+   "language": "pythom",
+   "publication": "2018",
+   "argumens": [
+      { "arg1": "value1" },
+      { "arg2": "value2" }
+   ]
+}

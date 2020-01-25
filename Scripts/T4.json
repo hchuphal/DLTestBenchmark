@@ -1,0 +1,16 @@
+//Tasks Specific json.. can be done for many iterations
+{
+   "taskName": "speech",
+   "description": "DL testing tool for images and videos",
+   "command": "python command",
+   "area": "name",
+   "repetitions": "python",
+   "datasets": [
+      { "name": "name1" },
+      { "size": "value2" }
+   ],
+   "dnn": [
+      { "name": "model_name" },
+      { "architecture": "VGG" }
+   ]
+}

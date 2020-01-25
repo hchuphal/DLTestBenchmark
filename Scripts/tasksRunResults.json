@@ -1,0 +1,13 @@
+//results Specific
+{
+   "toolName": "DeepXplore",
+   "description": "DL testing tool....",
+   "authors": "Din Lin",
+   "performance": [
+      { "faults": "value1" },
+      { "coverage": "value2" },
+      { "numberTasks": "value2" },
+      { "repetetions": "value2" },
+      { "status": "pass/fail" }
+   ]
+}
