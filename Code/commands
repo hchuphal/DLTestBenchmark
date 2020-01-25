@@ -1,0 +1,11 @@
+sudo ./scripts/serve-production
+
+/Users/hchuphal/Desktop/github/hchuphal.github.io
+
+
+Issue with python 2.7
+sudo pip2 install --upgrade --ignore-installed --install-option '--install-data=/usr/local' numpy
+
+/usr/bin/python -m pip install keras --user
+
+pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.0.1-py2-none-any.whl

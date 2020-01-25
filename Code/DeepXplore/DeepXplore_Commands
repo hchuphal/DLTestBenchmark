@@ -1,0 +1,45 @@
+
+1. 
+For running the script under different datasets, I have helped recently an inquiry on generating results for self-driving cars with blackout constraints.
+Following scripts worked for me:
+      python gen_diff.py blackout 2 0.5 100 100 50 0
+For other datasets, I suggest looking into the ISSUES where I have included some sample scripts when answering the questions.
+
+2. 
+Let me use an example" "python gen_diff.py occl 1 0.1 10 1 50 0", in ImageNet/MNIST to explain.
+To describe the parameters sequentially,
+"occl" is for occlusion transformation,
+1 is for balancing weight between different NNs such that one NN we aim to make it predict differently can have adjustable weights. (highly tunable and doesn't have the best value, we usually use 1)
+0.1 is for weight parameter that balance objectives of achieving discrepancies and neuron coverage (highly tunable and doesn't have the best value, we usually use 0.1),
+10 is the step size during gradient descent of generating inputs (we usually use 10, but I remember I tried 1 or other values and both can generate inputs)
+1 is the number of seed input based on which you generate difference-inducing input (you can pick arbitrary values),
+50 is number of iterations in gradient descent (you can try a different number of iterations, usually the larger number of iterations the more likely to generate difference-inducing inputs)
+0 is the threshold for neuron coverage (you can pick in [0,1]).
+
+Image:
+
+python gen_diff.py -occl_size 5x5 blackout 1 0.1 10 100 50 0
+
+
+Drebin-
+python gen_diff.py 1 0.5 20 50 0
+
+
+python gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+
+
+Example for your reference:
+MINIST: python gen_diff.py blackout 1 0.1 10 20 50 0
+ImageNet: python gen_diff.py occl 1 0.1 10 20 50 0
+Driving: python gen_diff.py light 1 0.1 10 20 50 0
+PDF: python gen_diff.py 2 0.1 10 20 50 0
+Drebin: python gen_diff.py 1 0.5 20 50 0
+
+
+take this an example., json
+
+usage: gen_diff.py [-h] [-t {0,1,2}] [-sp START_POINT]
+                   [-occl_size OCCLUSION_SIZE]
+                   {light,occl,blackout} weight_diff weight_nc step seeds
+                   grad_iterations threshold
+
