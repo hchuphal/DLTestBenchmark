@@ -1,6 +1,6 @@
 # Masters Thesis Jan- May, 2020 
 
-Benchmarking Deep Learning Testing Techniques 
+**Benchmarking Deep Learning Testing Techniques**
 
 # Latex Document Link
 
