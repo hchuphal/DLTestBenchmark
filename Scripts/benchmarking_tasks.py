@@ -220,7 +220,7 @@ if __name__ == '__main__':
         for command, argument  in commands.items():
             if argument != 'pass':
                 with CodeTimer(' Time to run the  testing command :'):
-                    logger.info('Total ' + str(len(_total_commands))+ ' commands to execute for Benchmarking ::\n'  + command +' : '+ argument)
+                    logger.info('Total ' + str(len(_total_commands))+ ' commands to execute for Benchmarking ::\n\n'  + command +' : '+ argument)
                     os.chdir(commands["path_"+str(i+1)])
                     # returns output as byte string
                     #print(subprocess.check_output('pwd'))
@@ -240,11 +240,15 @@ if __name__ == '__main__':
     sys.argv[1:] = [manual_check, output_config, datasets, language, final_time]
     test_suite = unittest.TestSuite()
 
-    repetitions = 1
+    repetitions = 1  # how many times to we want to repeat the tasks (7)
     tasks = get_tests()
     for __ in xrange(0, repetitions):
         test_suite.addTests(tasks)
+    logger.info("Benchmarking Tasks Execution Start....\n")
     time.sleep(1)
+    BenchmarkingTasksRunner(verbosity=2).run(test_suite)
+    time.sleep(1)
+    # post processing of results--- optional
     logger.info("Post processing of result Support :"+ output_config['postProcessingCommand']+'\n')
     if output_config['postProcessingCommand'] != 'None':
         logger.info(" Details of Post processing script :")
@@ -252,5 +256,5 @@ if __name__ == '__main__':
         logger.info("Command :" + output_config['postProcessingCommand'])
         logger.info("Parse path :" + output_config['parser_path']+'\n')
 
-    BenchmarkingTasksRunner(verbosity=2).run(test_suite)
+    
     logger.info("********* Tasks Execution Stopped! ********* \n")

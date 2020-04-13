@@ -167,3 +167,30 @@ path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Drivin
 2020-04-14 00:09:29,391 - root - INFO - Total Execution Time taken to run all the commands :8370.18609047 ms
 2020-04-14 00:09:30,402 - root - INFO - Post processing of result Support :None
 
+2020-04-14 00:12:34,513 - root - INFO - 
+
+2020-04-14 00:12:34,514 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-14 00:12:34,514 - root - INFO - Total 2 commands to execute for Benchmarking ::
+command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-14 00:13:16,426 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 41901.7391205 ms
+2020-04-14 00:13:16,431 - root - INFO - Total 2 commands to execute for Benchmarking ::
+dataset_type : images
+2020-04-14 00:13:16,589 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 158.03694725 ms
+2020-04-14 00:13:16,589 - root - INFO - Total 2 commands to execute for Benchmarking ::
+path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-14 00:13:16,597 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8.0189704895 ms
+2020-04-14 00:13:16,598 - root - INFO - Total 2 commands to execute for Benchmarking ::
+command_2 : ppython2.7 gen_diff.py occl 1 0.1 10 20 50 0
+2020-04-14 00:13:16,632 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 34.010887146 ms
+2020-04-14 00:13:16,633 - root - INFO - Total 2 commands to execute for Benchmarking ::
+dataset_type : images
+2020-04-14 00:13:16,641 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8.23616981506 ms
+2020-04-14 00:13:16,642 - root - INFO - Total 2 commands to execute for Benchmarking ::
+path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/ImageNet/
+2020-04-14 00:13:16,657 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 15.2208805084 ms
+2020-04-14 00:13:16,658 - root - INFO - Total Execution Time taken to run all the commands :42143.1779861 ms
+2020-04-14 00:13:17,676 - root - INFO - Post processing of result Support :None
+
+2020-04-14 00:13:26,717 - root - INFO - ********* Tasks Execution Stopped! ********* 
+
