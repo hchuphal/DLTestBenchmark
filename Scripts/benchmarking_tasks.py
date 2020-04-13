@@ -215,17 +215,19 @@ if __name__ == '__main__':
     _total_commands = [command for command in commmands_list if command["dataset_type"] != 'pass']
     logger.info("\n")
     logger.info ("\n********* Tasks Execution Started ...... *********")
+    logger.info('Total ' + str(len(_total_commands))+ ' commands to execute for Benchmarking!\n\n')
     start = time.time()
     for i, commands in enumerate(commmands_list): 
         for command, argument  in commands.items():
             if argument != 'pass':
-                with CodeTimer(' Time to run the  testing command :'):
-                    logger.info('Total ' + str(len(_total_commands))+ ' commands to execute for Benchmarking ::\n\n'  + command +' : '+ argument)
-                    os.chdir(commands["path_"+str(i+1)])
-                    # returns output as byte string
-                    #print(subprocess.check_output('pwd'))
-                    #print(argument)
-                    os.system(argument)
+                logger.info('Executing DL Testing tool ' +'run ' + command +' : '+ argument)
+                if 'dataset_type' in ['images', 'texts', 'self_driving']:
+                    logger.info('Dataset Classifications'+ dataset_type)
+                    # change to working directory of the script
+                os.chdir(commands["path_"+str(i+1)])
+                if "python" in argument:
+                    with CodeTimer(' Time to run the  testing command :'):
+                        os.system(argument)
                     #returned_output = subprocess.check_output('python gen_diff.py light 1 0.1 10 20 50 0')
     final_time = (time.time() - start) * 1000.0
     print("\n")
@@ -244,7 +246,7 @@ if __name__ == '__main__':
     tasks = get_tests()
     for __ in xrange(0, repetitions):
         test_suite.addTests(tasks)
-    logger.info("Benchmarking Tasks Execution Start....\n")
+    logger.info("\nBenchmarking Tasks Execution Start....")
     time.sleep(1)
     BenchmarkingTasksRunner(verbosity=2).run(test_suite)
     time.sleep(1)
@@ -257,4 +259,4 @@ if __name__ == '__main__':
         logger.info("Parse path :" + output_config['parser_path']+'\n')
 
     
-    logger.info("********* Tasks Execution Stopped! ********* \n")
+    logger.info("********* Tasks Execution Completed Successfully! ********* \n")
