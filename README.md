@@ -6,14 +6,25 @@ Masters Thesis 2019 Deep Learning Testing Benchmarking
 
 https://www.overleaf.com/project/5df966e2bdb0ce0001befe5e
 
+# Task List
+- [x] Document Results
+- [x] 1st version of Benchmarking script
+- [x] Task automation check
+- [x] run config check
+- [ ] Link all task
+- [ ] Script Results
+
 # -- Help
 - Python and Libs
+```
  alias python=/usr/local/bin/python2.7
  python2.7 -m pip install pytest --user
  python -m pip install bunch --user
  python -m pip install texttable --user
+ ```
  
 # run_config.json
+```json
  {
    "toolName": "DeepXplore",                    
    "description": "Whitebox DL testing tool",
@@ -61,8 +72,9 @@ https://www.overleaf.com/project/5df966e2bdb0ce0001befe5e
       {"parser_path" : "_path_"}
    ]
 }
-
+```
 
 # Run commands :
-
+```
  python benchmarking_tasks.py 1 3
+```
