@@ -1,8 +1,169 @@
-2020-04-13 21:00:59,915 - root - INFO - 
-********* Tasks Execution Started ...... ********* - <module> - line 213
-2020-04-13 21:01:09,962 - root - INFO - ********* Tasks Execution Stopped! ********* 
- - <module> - line 255
-2020-04-13 21:05:11,075 - root - INFO - 
-********* Tasks Execution Started ...... ********* - <module> - line 215
-2020-04-13 21:05:21,120 - root - INFO - ********* Tasks Execution Stopped! ********* 
- - <module> - line 257
+2020-04-13 23:56:17,931 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-13 23:56:17,931 - root - INFO - Commands to run out of total 0 commands ::command_1 python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-13 23:56:22,680 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 4748.40807915 ms
+2020-04-13 23:56:22,680 - root - INFO - Commands to run out of total 0 commands ::dataset_type images
+2020-04-13 23:56:22,695 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 14.4009590149 ms
+2020-04-13 23:56:22,695 - root - INFO - Commands to run out of total 0 commands ::path_1 /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-13 23:56:22,709 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 13.4410858154 ms
+2020-04-13 23:56:22,709 - root - INFO - Commands to run out of total 0 commands ::command_2 python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-13 23:56:34,509 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 11799.5989323 ms
+2020-04-13 23:56:34,509 - root - INFO - Commands to run out of total 0 commands ::dataset_type images
+2020-04-13 23:56:34,564 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 54.6979904175 ms
+2020-04-13 23:56:34,564 - root - INFO - Commands to run out of total 0 commands ::path_2 /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-13 23:56:34,575 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 10.9469890594 ms
+2020-04-13 23:56:34,575 - root - INFO - Total Execution Time taken to run all the commands :16644.0680027 ms
+2020-04-13 23:56:35,591 - root - INFO - Post processing of result Support :None
+
+2020-04-13 23:56:44,629 - root - INFO - ********* Tasks Execution Stopped! ********* 
+
+2020-04-13 23:58:48,234 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-13 23:58:48,235 - root - INFO - Commands to run out of total 50 commands ::command_1 python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-13 23:58:52,306 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 4071.30503654 ms
+2020-04-13 23:58:52,307 - root - INFO - Commands to run out of total 6 commands ::dataset_type images
+2020-04-13 23:58:52,323 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 15.7852172852 ms
+2020-04-13 23:58:52,324 - root - INFO - Commands to run out of total 70 commands ::path_1 /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-13 23:58:52,335 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 11.7781162262 ms
+2020-04-13 23:58:52,336 - root - INFO - Commands to run out of total 44 commands ::command_2 python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-13 23:58:52,891 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 554.602861404 ms
+2020-04-13 23:58:52,891 - root - INFO - Commands to run out of total 6 commands ::dataset_type images
+2020-04-13 23:58:52,901 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 10.4460716248 ms
+2020-04-13 23:58:52,902 - root - INFO - Commands to run out of total 72 commands ::path_2 /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-13 23:58:52,911 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 9.48190689087 ms
+2020-04-13 23:58:52,912 - root - INFO - Total Execution Time taken to run all the commands :4677.20007896 ms
+2020-04-13 23:58:53,917 - root - INFO - Post processing of result Support :None
+
+2020-04-13 23:59:02,963 - root - INFO - ********* Tasks Execution Stopped! ********* 
+
+2020-04-14 00:05:23,451 - root - INFO - [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}]
+2020-04-14 00:05:23,452 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-14 00:05:23,452 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::command_1 python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-14 00:05:24,626 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1174.38292503 ms
+2020-04-14 00:05:24,627 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::dataset_type images
+2020-04-14 00:05:24,741 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 114.782094955 ms
+2020-04-14 00:05:24,742 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::path_1 /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-14 00:05:24,752 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 9.76991653442 ms
+2020-04-14 00:05:24,752 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::command_2 python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-14 00:05:40,763 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 16011.286974 ms
+2020-04-14 00:05:40,764 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::dataset_type images
+2020-04-14 00:05:40,775 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 10.6911659241 ms
+2020-04-14 00:05:40,775 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::path_2 /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-14 00:05:40,786 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 10.7231140137 ms
+2020-04-14 00:05:40,786 - root - INFO - Total Execution Time taken to run all the commands :17333.9488506 ms
+2020-04-14 00:05:41,793 - root - INFO - Post processing of result Support :None
+
+2020-04-14 00:06:02,000 - root - INFO - 2
+2020-04-14 00:06:02,000 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-14 00:06:02,000 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::command_1 python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-14 00:06:17,276 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 15275.9239674 ms
+2020-04-14 00:06:17,277 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::dataset_type images
+2020-04-14 00:06:17,287 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 10.2100372314 ms
+2020-04-14 00:06:17,288 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::path_1 /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-14 00:06:17,298 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 10.34283638 ms
+2020-04-14 00:06:17,298 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::command_2 python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-14 00:06:17,449 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 151.192903519 ms
+2020-04-14 00:06:17,450 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::dataset_type images
+2020-04-14 00:06:17,458 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8.74996185303 ms
+2020-04-14 00:06:17,459 - root - INFO - Commands to run out of total [{u'command_1': u'python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0', u'dataset_type': u'images', u'path_1': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST'}, {u'command_2': u'python2.7 gen_diff.py light 1 0.1 10 20 50 0', u'dataset_type': u'images', u'path_2': u'/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving'}] commands ::path_2 /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-14 00:06:17,472 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 13.5018825531 ms
+2020-04-14 00:06:17,473 - root - INFO - Total Execution Time taken to run all the commands :15472.276926 ms
+2020-04-14 00:07:17,211 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-14 00:07:17,212 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 0.00786781311035 ms
+2020-04-14 00:07:27,393 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-14 00:07:27,393 - root - INFO - Total 2 commands  to execute ::
+command_1 python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-14 00:08:02,778 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 35384.5629692 ms
+2020-04-14 00:08:02,780 - root - INFO - Total 2 commands  to execute ::
+dataset_type images
+2020-04-14 00:08:02,810 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 30.7881832123 ms
+2020-04-14 00:08:02,811 - root - INFO - Total 2 commands  to execute ::
+path_1 /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-14 00:08:02,822 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 11.5940570831 ms
+2020-04-14 00:08:02,823 - root - INFO - Total 2 commands  to execute ::
+command_2 python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-14 00:08:03,287 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 463.584899902 ms
+2020-04-14 00:08:03,287 - root - INFO - Total 2 commands  to execute ::
+dataset_type images
+2020-04-14 00:08:03,295 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 7.81798362732 ms
+2020-04-14 00:08:03,295 - root - INFO - Total 2 commands  to execute ::
+path_2 /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-14 00:08:03,305 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 9.84191894531 ms
+2020-04-14 00:08:03,305 - root - INFO - Total Execution Time taken to run all the commands :35912.3389721 ms
+2020-04-14 00:08:06,146 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-14 00:08:06,146 - root - INFO - Total 2 commands to execute for Benchmarking ::
+command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-14 00:08:18,340 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 12193.3751106 ms
+2020-04-14 00:08:18,341 - root - INFO - Total 2 commands to execute for Benchmarking ::
+dataset_type : images
+2020-04-14 00:08:18,362 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 20.9040641785 ms
+2020-04-14 00:08:18,362 - root - INFO - Total 2 commands to execute for Benchmarking ::
+path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-14 00:08:18,372 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 9.83309745789 ms
+2020-04-14 00:08:18,372 - root - INFO - Total 2 commands to execute for Benchmarking ::
+command_2 : python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-14 00:08:30,062 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 11689.9421215 ms
+2020-04-14 00:08:30,063 - root - INFO - Total 2 commands to execute for Benchmarking ::
+dataset_type : images
+2020-04-14 00:08:30,150 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 87.1942043304 ms
+2020-04-14 00:08:30,150 - root - INFO - Total 2 commands to execute for Benchmarking ::
+path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-14 00:08:30,160 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 9.62901115417 ms
+2020-04-14 00:08:30,160 - root - INFO - Total Execution Time taken to run all the commands :24013.6930943 ms
+2020-04-14 00:08:31,176 - root - INFO - Post processing of result Support :None
+
+2020-04-14 00:08:40,218 - root - INFO - ********* Tasks Execution Stopped! ********* 
+
+2020-04-14 00:08:54,881 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-14 00:08:54,882 - root - INFO - Total 2 commands to execute for Benchmarking ::
+command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-14 00:08:59,842 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 4960.10398865 ms
+2020-04-14 00:08:59,842 - root - INFO - Total 2 commands to execute for Benchmarking ::
+dataset_type : images
+2020-04-14 00:08:59,862 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 19.5808410645 ms
+2020-04-14 00:08:59,862 - root - INFO - Total 2 commands to execute for Benchmarking ::
+path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-14 00:08:59,871 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8.8357925415 ms
+2020-04-14 00:08:59,871 - root - INFO - Total 2 commands to execute for Benchmarking ::
+command_2 : python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-14 00:09:00,920 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1048.67005348 ms
+2020-04-14 00:09:00,921 - root - INFO - Total 2 commands to execute for Benchmarking ::
+dataset_type : images
+2020-04-14 00:09:00,929 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8.11791419983 ms
+2020-04-14 00:09:00,929 - root - INFO - Total 2 commands to execute for Benchmarking ::
+path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-14 00:09:00,937 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8.14318656921 ms
+2020-04-14 00:09:00,937 - root - INFO - Total Execution Time taken to run all the commands :6055.55009842 ms
+2020-04-14 00:09:01,940 - root - INFO - Post processing of result Support :None
+
+2020-04-14 00:09:10,977 - root - INFO - ********* Tasks Execution Stopped! ********* 
+
+2020-04-14 00:09:21,021 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-14 00:09:21,021 - root - INFO - Total 2 commands to execute for Benchmarking ::
+command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-14 00:09:29,232 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8210.92891693 ms
+2020-04-14 00:09:29,233 - root - INFO - Total 2 commands to execute for Benchmarking ::
+dataset_type : images
+2020-04-14 00:09:29,251 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 17.4651145935 ms
+2020-04-14 00:09:29,251 - root - INFO - Total 2 commands to execute for Benchmarking ::
+path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-14 00:09:29,259 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8.46409797668 ms
+2020-04-14 00:09:29,260 - root - INFO - Total 2 commands to execute for Benchmarking ::
+command_2 : python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-14 00:09:29,376 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 115.982055664 ms
+2020-04-14 00:09:29,376 - root - INFO - Total 2 commands to execute for Benchmarking ::
+dataset_type : images
+2020-04-14 00:09:29,383 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 6.74891471863 ms
+2020-04-14 00:09:29,383 - root - INFO - Total 2 commands to execute for Benchmarking ::
+path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-14 00:09:29,391 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8.14509391785 ms
+2020-04-14 00:09:29,391 - root - INFO - Total Execution Time taken to run all the commands :8370.18609047 ms
+2020-04-14 00:09:30,402 - root - INFO - Post processing of result Support :None
+

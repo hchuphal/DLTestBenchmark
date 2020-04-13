@@ -28,7 +28,7 @@ import logging
 
 # Set up logging and formatting
 logger = logging.getLogger()
-logFormatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s - %(funcName)s - line %(lineno)d")
+logFormatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 
 # Set up the console handler
 consoleHandler = logging.StreamHandler()
@@ -60,7 +60,7 @@ class CodeTimer:
 
     def __exit__(self, exc_type, exc_value, traceback):
         self.took = (timeit.default_timer() - self.start) * 1000.0
-        print('Benchmarking Time : ' + self.name + ' took: ' + str(self.took) + ' ms')
+        logger.warning('Benchmarking Profiling : ' + self.name + ' took: ' + str(self.took) + ' ms')
 
 
 class BenchmakringTasksResults(unittest.runner.TextTestResult):
@@ -165,8 +165,8 @@ class BenchmarkingTasks(unittest.TestCase):
 
     def task_5(self):
         time.sleep(1)
-        assert self._time > 1000.0 ,"Execution time of Testing is less than 1 s"
-        print "\n Total time taken in ms : " + str(self._time)
+        assert self._time > 1000.0 ,"Execution time of Testing is less than 1 second"
+        #logger.info("\n Total time taken in ms : " + str(self._time))
 
     def task_6(self):
         time.sleep(1)
@@ -196,7 +196,7 @@ if __name__ == '__main__':
     # 1. get run config
     _make_runconfig()
     
-    sys.stdout = open('stdout.txt', 'w')
+    sys.stdout = open('Benchmarking_console_log.txt', 'w')
     # 2. Read the run config
     if _TEMP_CONFIG:
         with open(_TEMP_CONFIG, 'r') as myfile:
@@ -212,22 +212,24 @@ if __name__ == '__main__':
     language = obj['language']
     datasets = obj['datasets_classification']
     spath = str(obj['path_to_script'])
+    _total_commands = [command for command in commmands_list if command["dataset_type"] != 'pass']
+    logger.info("\n")
     logger.info ("\n********* Tasks Execution Started ...... *********")
     start = time.time()
     for i, commands in enumerate(commmands_list): 
         for command, argument  in commands.items():
             if argument != 'pass':
                 with CodeTimer(' Time to run the  testing command :'):
-                    print("Commands to run: " + command, argument)
+                    logger.info('Total ' + str(len(_total_commands))+ ' commands to execute for Benchmarking ::\n'  + command +' : '+ argument)
                     os.chdir(commands["path_"+str(i+1)])
                     # returns output as byte string
                     #print(subprocess.check_output('pwd'))
-                    print(argument)
+                    #print(argument)
                     os.system(argument)
                     #returned_output = subprocess.check_output('python gen_diff.py light 1 0.1 10 20 50 0')
     final_time = (time.time() - start) * 1000.0
     print("\n")
-    print("Total Execution Time taken to run all the commands :" +str(final_time) +' ms')
+    logger.info("Total Execution Time taken to run all the commands :" +str(final_time) +' ms')
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', default='My Input')
     parser.add_argument('filename', default='some_file.txt')
@@ -236,9 +238,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     #sys.argv[1:] = args.unittest_args
     sys.argv[1:] = [manual_check, output_config, datasets, language, final_time]
-    #sys.argv[2] = output_config
-    #sys.argv[3] = datasets
-    #sys.argv[4] = language
     test_suite = unittest.TestSuite()
 
     repetitions = 1
@@ -246,12 +245,12 @@ if __name__ == '__main__':
     for __ in xrange(0, repetitions):
         test_suite.addTests(tasks)
     time.sleep(1)
-    print("\nPost processing of result Support :"+ output_config['postProcessingCommand'])
+    logger.info("Post processing of result Support :"+ output_config['postProcessingCommand']+'\n')
     if output_config['postProcessingCommand'] != 'None':
-        print(" Details of Post processing script :")
-        print("Saved Output Path :" + output_config['output_default_path'])
-        print("Command :" + output_config['postProcessingCommand'])
-        print("Parse path :" + output_config['parser_path'])
+        logger.info(" Details of Post processing script :")
+        logger.info("Saved Output Path :" + output_config['output_default_path'])
+        logger.info("Command :" + output_config['postProcessingCommand'])
+        logger.info("Parse path :" + output_config['parser_path']+'\n')
 
     BenchmarkingTasksRunner(verbosity=2).run(test_suite)
     logger.info("********* Tasks Execution Stopped! ********* \n")
