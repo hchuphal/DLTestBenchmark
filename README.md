@@ -25,7 +25,7 @@ Welcome : Input options to run DL benchmakring tasks >>
 6. Check Version of the tool
 7. -- Help??
 8. EXIT
-´```
+```
 
 # Latex Document Link
 
