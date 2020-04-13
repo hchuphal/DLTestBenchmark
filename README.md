@@ -6,6 +6,10 @@
 ```
 python2.7 dl_benchmarking_main.py
 ```
+- or run Benchmarking tasks directly:
+```
+ python2.7 benchmarking_tasks.py
+```
 - and Select an option as given below from the comnand line ::
 
 ```
@@ -98,8 +102,4 @@ https://www.overleaf.com/project/5df966e2bdb0ce0001befe5e
    }
 }
 ```
-
-# Run commands :
-```
- python benchmarking_tasks.py 1 3
-```
+ # end
