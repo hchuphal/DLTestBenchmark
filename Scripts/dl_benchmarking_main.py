@@ -288,13 +288,13 @@ def _check_parsing():
     _main_menu()
 
 def _check_version():
-    command_1 = 'java -jar plantuml.jar -version'
+    command_1 = 'python2.7 --version'
     #print command_1
     os.system(command_1)
     _main_menu()
 
 def _help_():
-    command_1 = 'java -jar plantuml.jar -help'
+    command_1 = 'python2.7 dl_benchmarking_main.py --help'
     #print command_1
     os.system(command_1)
     _main_menu()
@@ -307,8 +307,8 @@ def _check_config():
     print "*" * 50
     print "Check the run Config of the DL testing tool before starting Benchmarking Tasks..."
     sleep(1)
-    os.chdir(r"../../")
-    command_1 = 'gvim ../../temp/run_config_tool.json'
+    #os.chdir(r"../../")
+    command_1 = 'gvim ./temp/run_config_tool.json'
     #print command_1
     os.system(command_1)
 
@@ -324,8 +324,8 @@ def _edit_config():
     print "*" * 50
     print "Edit the run Config of the DL testing tool to Execute Benchmarking Tasks..."
     sleep(1)
-    os.chdir(r"../../")
-    command_2 = 'gvim ../../run_config1.json'
+    #os.chdir(r"../../")
+    command_2 = 'gvim run_config1.json'
     #print command_1
     os.system(command_2)
 
@@ -334,11 +334,7 @@ def _edit_config():
     print
     _main_menu()
 
-def _dl_testing_tool_():
-    pass
 
-def _check_tasks():
-    pass
 
 def _run_tasks():
     print
@@ -348,7 +344,7 @@ def _run_tasks():
     print "Starting Benchmarking Tasks..."
     sleep(1)
     #os.system('cd ../../')
-    os.chdir(r"../../")
+    #os.chdir(r"../../")
     command_1 = 'python2.7 benchmarking_tasks.py'
     #print command_1
     os.system(command_1)
@@ -357,6 +353,14 @@ def _run_tasks():
     print
     print
     _main_menu()
+
+
+def _dl_testing_tool_():
+    pass
+
+
+def _check_tasks():
+    pass
 
 
 def _run_package_level(_vendor, _tech, _input_file, _input_xml, _module_name):

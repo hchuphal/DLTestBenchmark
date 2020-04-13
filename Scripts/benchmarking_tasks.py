@@ -233,9 +233,9 @@ if __name__ == '__main__':
     print("\n")
     logger.info("Total Execution Time taken to run all the commands :" +str(final_time) +' ms')
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input', default='My Input')
-    parser.add_argument('filename', default='some_file.txt')
-    parser.add_argument('unittest_args', nargs='*')
+    #parser.add_argument('--input', default='My Input')
+    #parser.add_argument('filename', default='some_file.txt')
+    #parser.add_argument('unittest_args', nargs='*')
     #parser.add_argument('--name', required=True)
     args = parser.parse_args()
     #sys.argv[1:] = args.unittest_args
