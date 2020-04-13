@@ -1,0 +1,42 @@
+// RUN config for running benchmarking tasks for DL testing tool
+{
+   "toolName": "DeepXplore",                    // Name of the DL tesring tool
+   "description": "Whitebox DL testing tool",  // use minimum text to explain
+   "authors": "Din Lin",
+   "language": "python",                       // programming language in which tool is implememted like python etc
+   "publication": "2018",                      // publication year
+   "commands": [  // put commands to execute the testing tool all the supported differnent commands
+      // provide the path where scripts are placed for the DL testing tool
+      {"path_to_script" : "absolute__path_to_script"},
+      { "command_1": "python gen_diff.py occl -t 0 1.0 0.1 10 10 10 0"},  // commands seperated by comma 
+      { "command_2": "python gen_diff.py blackout 1 0.1 10 20 50 0"},     // second command for a different dataset or whatever supported
+      { "command_3": "pass"},                                              // pass means no more commands supported
+      { "command_4": "pass"},
+      { "command_5": "pass"},
+      { "command_6": "pass"},
+      { "command_7": "pass"}                                               // add comma and add more if needed
+   ],
+   "manual_check": [
+      // model_selection  if own models are allowed to test by the DL testing tool
+      {"model_selection" : "No"},  // default is No valid options are Yes or No
+      // retraining  if DL testing tool does retraining after the tests
+      {"retraining" : "No"},        // default is No valid options are Yes or No
+      // Cross referencing Oracle  single or multiple Models are being tested
+      {"differential_testing" : "No"}// default is No valid options are Yes or No
+   ],
+   // different tyoes of DL datasets supported by the tool
+   "datasets_classification": [
+      {"images" : "No"},          // default is No valid options are Yes or No 
+      {"self_driving" : "No"},   // default is No valid options are Yes or No 
+      {"texts" : "No"}           // default is No valid options are Yes or No 
+   ],
+   // Output Capabilities
+   "output_config" : [
+      {"output_saved" : "No"},             // default is No valid options are Yes or No
+      {"output_default_path" : "_path_"},
+      // postProcessingCommand  if saved logs can be parsed to get some performance metrics
+      {"postProcessingCommand" : "No"},    // default is No valid options are Yes or No
+      {"parser_path" : "_path_"}
+   ]
+
+}

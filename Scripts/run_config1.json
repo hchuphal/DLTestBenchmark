@@ -1,0 +1,47 @@
+{
+   "toolName": "DeepXplore",                    
+   "description": "Whitebox DL testing tool",
+   "authors": "Din Lin",
+   "language": "python",                       
+   "publication": "2018", 
+   "path_to_script" : "/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master",                    
+   "commands": [
+      { "path_1":"pass",
+      "command_1": "pass",
+      "dataset_type": "pass"},
+      {"path_2":"pass",
+      "command_2": "pass",
+      "dataset_type": "pass"},
+      {"path_3":"pass",
+      "command_3": "pass",
+      "dataset_type": "pass"},
+      {"path_4":"pass",
+      "command_4": "pass",
+      "dataset_type": "pass"},
+      {"path_5":"pass",
+      "command_5": "pass",
+      "dataset_type": "pass"},
+      {"path_6":"pass",
+      "command_6": "pass",
+      "dataset_type": "pass"},
+      {"path_7":"pass",
+      "command_7": "pass",
+      "dataset_type": "pass"}
+   ],
+   "manual_check": {
+      "model_selection" : "No",
+      "retraining" : "Yes",
+      "differential_testing" : "Yes"
+   },
+   "datasets_classification": {
+      "images" : "Yes",
+      "self_driving" : "Yes",
+      "texts" : "No"
+   },
+   "output_config" : {
+      "output_saved" : "Yes",
+      "output_default_path" : "_path_",
+      "postProcessingCommand" : "None",
+      "parser_path" : "_path_"
+   }
+}
