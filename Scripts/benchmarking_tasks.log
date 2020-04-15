@@ -533,3 +533,113 @@ Benchmarking Tasks Execution Start....
 
 
 2020-04-14 01:35:28,885 - root - INFO - Executing DL Testing tool run command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-14 01:36:03,376 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 34487.1618748 ms
+2020-04-14 01:36:03,377 - root - INFO - Executing DL Testing tool run dataset_type : images
+2020-04-14 01:36:03,378 - root - INFO - Executing DL Testing tool run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-14 01:36:03,378 - root - INFO - Executing DL Testing tool run command_2 : python2.7 gen_diff.py 2 0.1 10 20 50 0
+2020-04-14 01:37:07,791 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 64411.3190174 ms
+2020-04-14 01:37:07,793 - root - INFO - Executing DL Testing tool run dataset_type : texts
+2020-04-14 01:37:07,793 - root - INFO - Executing DL Testing tool run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/PDF/
+2020-04-14 01:37:07,793 - root - INFO - Total Execution Time taken to run all the commands :98908.8740349 ms
+2020-04-14 01:37:07,798 - root - INFO - 
+Benchmarking Tasks Execution Start....
+2020-04-14 01:37:18,855 - root - INFO - Post processing of result Support :None
+
+2020-04-14 01:37:18,855 - root - INFO - ********* Tasks Execution Completed Successfully! ********* 
+
+2020-04-15 18:08:38,169 - root - INFO - 
+
+2020-04-15 18:08:38,170 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-15 18:08:38,170 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-15 18:08:38,171 - root - INFO - Executing DL Testing tool run command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-15 18:09:02,452 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 24279.2451382 ms
+2020-04-15 18:09:02,480 - root - INFO - Executing DL Testing tool run dataset_type : images
+2020-04-15 18:09:02,481 - root - INFO - Executing DL Testing tool run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-15 18:09:02,483 - root - INFO - Executing DL Testing tool run command_2 : python2.7 gen_diff.py 2 0.1 10 20 50 0
+2020-04-15 18:09:28,164 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 25680.3178787 ms
+2020-04-15 18:09:28,168 - root - INFO - Executing DL Testing tool run dataset_type : texts
+2020-04-15 18:09:28,168 - root - INFO - Executing DL Testing tool run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/PDF/
+2020-04-15 18:09:28,169 - root - INFO - Total Execution Time taken to run all the commands :49998.0480671 ms
+2020-04-15 18:09:28,172 - root - INFO - 
+Benchmarking Tasks Execution Start....
+2020-04-15 18:09:39,311 - root - INFO - Post processing of result Support :None
+
+2020-04-15 18:09:39,311 - root - INFO - ********* Tasks Execution Completed Successfully! ********* 
+
+2020-04-15 18:12:57,114 - root - INFO - 
+
+2020-04-15 18:12:57,114 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-15 18:12:57,116 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-15 18:12:57,118 - root - INFO - Executing DL Testing tool run command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-15 18:13:15,919 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 18794.2199707 ms
+2020-04-15 18:13:15,920 - root - INFO - Executing DL Testing tool run dataset_type : images
+2020-04-15 18:13:15,921 - root - INFO - Executing DL Testing tool run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-15 18:13:15,921 - root - INFO - Executing DL Testing tool run command_2 : python2.7 gen_diff.py 2 0.1 10 20 50 0
+2020-04-15 18:13:43,955 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 28033.3640575 ms
+2020-04-15 18:13:43,955 - root - INFO - Executing DL Testing tool run dataset_type : texts
+2020-04-15 18:13:43,955 - root - INFO - Executing DL Testing tool run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/PDF/
+2020-04-15 18:13:43,956 - root - INFO - Total Execution Time taken to run all the commands :46838.1068707 ms
+2020-04-15 18:13:43,960 - root - INFO - 
+Benchmarking Tasks Execution Start....
+2020-04-15 18:13:55,027 - root - INFO - Post processing of result Support :None
+
+2020-04-15 18:13:55,027 - root - INFO - ********* Tasks Execution Completed Successfully! ********* 
+
+2020-04-15 18:15:43,195 - root - INFO - 
+
+2020-04-15 18:15:43,196 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-15 18:15:43,196 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-15 18:15:43,197 - root - INFO - Executing DL Testing tool run command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-15 18:15:59,772 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 16572386.0264 ms
+2020-04-15 18:15:59,774 - root - INFO - Executing DL Testing tool run dataset_type : images
+2020-04-15 18:15:59,774 - root - INFO - Executing DL Testing tool run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-15 18:15:59,774 - root - INFO - Executing DL Testing tool run command_2 : python2.7 gen_diff.py 2 0.1 10 20 50 0
+2020-04-15 18:16:28,714 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 28939141.9888 ms
+2020-04-15 18:16:28,716 - root - INFO - Executing DL Testing tool run dataset_type : texts
+2020-04-15 18:16:28,717 - root - INFO - Executing DL Testing tool run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/PDF/
+2020-04-15 18:16:28,718 - root - INFO - Total Execution Time taken to run all the commands :45520869.9703 ms
+2020-04-15 18:16:28,721 - root - INFO - 
+Benchmarking Tasks Execution Start....
+2020-04-15 18:16:39,785 - root - INFO - Post processing of result Support :None
+
+2020-04-15 18:16:39,785 - root - INFO - ********* Tasks Execution Completed Successfully! ********* 
+
+2020-04-15 19:17:16,720 - root - INFO - 
+
+2020-04-15 19:17:16,721 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-15 19:17:16,721 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-15 19:17:16,721 - root - INFO - Executing DL Testing tool run command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-15 19:17:38,306 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 0.0215824420452 ms
+2020-04-15 19:17:38,307 - root - INFO - Executing DL Testing tool run dataset_type : images
+2020-04-15 19:17:38,307 - root - INFO - Executing DL Testing tool run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-15 19:17:38,307 - root - INFO - Executing DL Testing tool run command_2 : python2.7 gen_diff.py 2 0.1 10 20 50 0
+2020-04-15 19:18:04,349 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 0.0260421631336 ms
+2020-04-15 19:18:04,350 - root - INFO - Executing DL Testing tool run dataset_type : texts
+2020-04-15 19:18:04,350 - root - INFO - Executing DL Testing tool run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/PDF/
+2020-04-15 19:18:04,350 - root - INFO - Total Execution Time taken to run all the commands :0.0476289551258 ms
+2020-04-15 19:18:04,351 - root - INFO - 
+Benchmarking Tasks Execution Start....
+2020-04-15 19:18:15,455 - root - INFO - Post processing of result Support :None
+
+2020-04-15 19:18:15,456 - root - INFO - ********* Tasks Execution Completed Successfully! ********* 
+
+2020-04-15 19:24:27,982 - root - INFO - 
+
+2020-04-15 19:24:27,983 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-15 19:24:27,983 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-15 19:24:27,985 - root - INFO - Executing DL Testing tool run command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0

@@ -59,7 +59,7 @@ class CodeTimer:
         self.start = timeit.default_timer()
 
     def __exit__(self, exc_type, exc_value, traceback):
-        self.took = (timeit.default_timer() - self.start) * 1000.0
+        self.took = (timeit.default_timer() - self.start)
         logger.warning('Benchmarking Profiling : ' + self.name + ' took: ' + str(self.took) + ' ms')
 
 
@@ -165,7 +165,7 @@ class BenchmarkingTasks(unittest.TestCase):
 
     def task_5(self):
         time.sleep(1)
-        assert self._time > 1000.0 ,"Execution time of Testing is less than 1 second"
+        assert self._time > 1.0 ,"Execution time of Testing is less than 1 second"
         #logger.info("\n Total time taken in ms : " + str(self._time))
 
     def task_6(self):
@@ -229,7 +229,7 @@ if __name__ == '__main__':
                     with CodeTimer(' Time to run the  testing command :'):
                         os.system(argument)
                     #returned_output = subprocess.check_output('python gen_diff.py light 1 0.1 10 20 50 0')
-    final_time = (time.time() - start) * 1000.0
+    final_time = (time.time() - start)
     print("\n")
     logger.info("Total Execution Time taken to run all the commands :" +str(final_time) +' ms')
     parser = argparse.ArgumentParser()
