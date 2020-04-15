@@ -60,7 +60,7 @@ class CodeTimer:
 
     def __exit__(self, exc_type, exc_value, traceback):
         self.took = (timeit.default_timer() - self.start)
-        logger.warning('Benchmarking Profiling : ' + self.name + ' took: ' + str(self.took) + ' ms')
+        logger.warning('Benchmarking Profiling : ' + self.name + ' took: ' + str(self.took) + ' Seconds')
 
 
 class BenchmakringTasksResults(unittest.runner.TextTestResult):
@@ -231,7 +231,7 @@ if __name__ == '__main__':
                     #returned_output = subprocess.check_output('python gen_diff.py light 1 0.1 10 20 50 0')
     final_time = (time.time() - start)
     print("\n")
-    logger.info("Total Execution Time taken to run all the commands :" +str(final_time) +' ms')
+    logger.info("Total Execution Time taken to run all the commands :" +str(final_time) +' Seconds')
     parser = argparse.ArgumentParser()
     #parser.add_argument('--input', default='My Input')
     #parser.add_argument('filename', default='some_file.txt')
