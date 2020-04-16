@@ -25,6 +25,7 @@ import time, timeit
 import logging
 import sys
 import logging
+import shutil
 
 # Set up logging and formatting
 logger = logging.getLogger()
@@ -36,7 +37,7 @@ consoleHandler.setFormatter(logFormatter)
 logger.addHandler(consoleHandler)
 
 # Set up the file handler 
-fileHandler = logging.FileHandler("{0}/{1}.log".format('.', 'benchmarking_tasks'))
+fileHandler = logging.FileHandler("{0}/{1}.log".format('.', 'benchmarking_tasks_console'))
 fileHandler.setFormatter(logFormatter)
 logger.addHandler(fileHandler)
 
@@ -50,6 +51,7 @@ logger.setLevel(logging.INFO)
 _DEFAULT_RUN_CONFIG = 'run_config1.json'
 _TEMP_DIR = './temp/'
 _TEMP_CONFIG = './temp/run_config_tool.json'
+_OUTPUT = 'output'
 
 class CodeTimer:
     def __init__(self, name=None):
@@ -130,13 +132,15 @@ class BenchmarkingTasks(unittest.TestCase):
         self.a = 1
         self._pass = ['yes', 'Yes', 'y', 'Y', 'YES']
         self._fail = ['no', 'No', 'n', 'N', 'NO']
-        self._languages = ['python', 'Python', 'PYTHON']
+        self._languages = ['python', 'Python', 'PYTHON', 'perl', 'erlang', 'java']
         self.manual_check = sys.argv[1]
         self.output_config = sys.argv[2]
         self.datasets = sys.argv[3]
         self.language = sys.argv[4]
         self._os = platform.system()
         self._time = sys.argv[5]
+        self._command_status = sys.argv[6]
+        #os
 
     def task_1(self):
         time.sleep(1)
@@ -171,6 +175,10 @@ class BenchmarkingTasks(unittest.TestCase):
     def task_6(self):
         time.sleep(1)
         assert self.output_config['output_saved'] in self._pass,"Output Saving is NOT possible"
+        #logger.info(self._command_status)
+        for i, status in enumerate(self._command_status):
+            if self._command_status[i] != 0:
+                assert self._command_status[i] == 0, "DL Testing Tool command failed to execute!"
 
     def task_7(self):
         time.sleep(1)
@@ -184,19 +192,35 @@ def get_tests():
 
 def _make_runconfig():
     try:
-        os.makedirs(_TEMP_DIR)    
+        os.makedirs(_OUTPUT)    
         #print("Directory " , dirName ,  " Created ")
     except OSError as e:
         if e.errno == errno.EEXIST:
-            pass
+            logger.warning('Output Config :: Already Exist!')
  
     shutil.copy2(_DEFAULT_RUN_CONFIG, './temp/run_config_tool.json')
+
+def _write_output(_buffer):
+    logger.info(_buffer)
+    try:
+       # log file to write to
+       logFile = _OUTPUT+'Benchmarking_dl_testing_tool_'+time.strftime("%Y%m%d-%H%M%S")+'_._log'
+       report = open(logFile, 'a')
+       report.write(_buffer)
+
+    except Exception as e:
+       # get line number and error message
+       report.write('En error message while Executing DL Testing command' + e+ logFile)
 
 if __name__ == '__main__':
     # 1. get run config
     _make_runconfig()
-    
-    sys.stdout = open('Benchmarking_console_log.txt', 'w')
+    try:
+        shutil.rmtree(_OUTPUT)
+        os.mkdir(_OUTPUT)
+    except OSError as e:
+        logger.warning("Error: No Previous Output found! %s - %s." % (e.filename, e.strerror))
+    #sys.stdout = open('Benchmarking_logs_'+time.strftime("%Y%m%d-%H%M%S"+'_.log'), 'w')
     # 2. Read the run config
     if _TEMP_CONFIG:
         with open(_TEMP_CONFIG, 'r') as myfile:
@@ -216,6 +240,7 @@ if __name__ == '__main__':
     logger.info("\n")
     logger.info ("\n********* Tasks Execution Started ...... *********")
     logger.info('Total ' + str(len(_total_commands))+ ' commands to execute for Benchmarking!\n\n')
+    _buffer = []
     start = time.time()
     for i, commands in enumerate(commmands_list): 
         for command, argument  in commands.items():
@@ -227,7 +252,14 @@ if __name__ == '__main__':
                 os.chdir(commands["path_"+str(i+1)])
                 if "python" in argument:
                     with CodeTimer(' Time to run the  testing command :'):
-                        os.system(argument)
+                        try:
+                            _status = os.system(argument)
+                            _buffer.append(_status)
+                            #_buffer = subprocess.check_output(argument)
+                            #_write_output(_buffer)
+                        except Exception as e:
+                            logger.error("Benchmarking DL Testing Tool command failed!")
+                        
                     #returned_output = subprocess.check_output('python gen_diff.py light 1 0.1 10 20 50 0')
     final_time = (time.time() - start)
     print("\n")
@@ -239,7 +271,7 @@ if __name__ == '__main__':
     #parser.add_argument('--name', required=True)
     args = parser.parse_args()
     #sys.argv[1:] = args.unittest_args
-    sys.argv[1:] = [manual_check, output_config, datasets, language, final_time]
+    sys.argv[1:] = [manual_check, output_config, datasets, language, final_time, _buffer]
     test_suite = unittest.TestSuite()
 
     repetitions = 1  # how many times to we want to repeat the tasks (7)

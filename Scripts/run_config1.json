@@ -40,7 +40,7 @@
    },
    "output_config" : {
       "output_saved" : "Yes",
-      "output_default_path" : "_path_",
+      "output_default_path" : "./output/",
       "postProcessingCommand" : "None",
       "parser_path" : "_path_"
    }
