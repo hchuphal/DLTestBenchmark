@@ -1,9 +1,9 @@
 {
    "toolName": "sadl-master",                    
-   "description": "Whitebox DL testing tool",
-   "authors": "Din Lin",
+   "description": "Suprise Adequacy DL Testing",
+   "authors": "R Feldt",
    "language": "python",                       
-   "publication": "2018", 
+   "publication": "2019", 
    "path_to_script" : "/Users/hchuphal/Desktop/github/thesis2020/Code/sadl-master",                    
    "commands": [
       { "path_1":"/Users/hchuphal/Desktop/github/thesis2020/Code/sadl-master",

@@ -48,9 +48,11 @@ logger.setLevel(logging.INFO)
 
 
 #_DEFAULT_RUN_CONFIG = 'run_config1.json'
-_DEEPXPLORE_RUN_CONFIG = 'run_config_deepX.json'
-#_DLFUZZ_RUN_CONFIG = 'run_config_dlfuzz.json'
+#_DEEPXPLORE_RUN_CONFIG = 'run_config_deepX.json'
+_DLFUZZ_RUN_CONFIG = 'run_config_dlfuzz.json'
 #_SADL_RUN_CONFIG = 'run_config_sadl.json'
+
+_DEFAULT_RUN_CONFIG = _DLFUZZ_RUN_CONFIG
 
 _TEMP_DIR = './temp/'
 _TEMP_CONFIG = './temp/run_config_tool.json'
