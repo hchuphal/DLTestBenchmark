@@ -104,13 +104,15 @@ https://www.overleaf.com/project/5df966e2bdb0ce0001befe5e
 ```
 # Activate Config for a Required Test
 
-´´´ 
-#_DEEPXPLORE_RUN_CONFIG = 'run_config_deepX.json'
-_DLFUZZ_RUN_CONFIG = 'run_config_dlfuzz.json'
-#_SADL_RUN_CONFIG = 'run_config_sadl.json'
+```
+# RUN CONFIG for DL TESTING TOOLS
+#_DEFAULT_RUN_CONFIG = 'run_config1.json'
+#_DEFAULT_RUN_CONFIG = 'run_config_deepX.json'     # _DEEPXPLORE_RUN_CONFIG
+#_DEFAULT_RUN_CONFIG = 'run_config_dlfuzz.json'    # _DLFUZZ_RUN_CONFIG
+#_DEFAULT_RUN_CONFIG = 'run_config_deepfault.json' # _DEEPFAULT_RUN_CONFIG
+_DEFAULT_RUN_CONFIG = 'run_config_sadl.json'       # _SADL_RUN_CONFIG
 
-_DEFAULT_RUN_CONFIG = _DLFUZZ_RUN_CONFIG
-´´´
+```
 
 
  # end
