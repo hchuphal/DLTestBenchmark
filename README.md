@@ -20,6 +20,7 @@ python2.7 dl_benchmarking_main.py
 ```
 - and Select an option as given below from the comnand line ::
 
+```
 +--------------------------------------+
 |                                      |
 |      DL Testing Tools Benchmarking   |
