@@ -20,10 +20,13 @@ python2.7 dl_benchmarking_main.py
 ```
 - and Select an option as given below from the comnand line ::
 
-```
-**************************************************
-Check the run Config of the DL testing tool before starting Benchmarking Tasks...
-**************************************************
++--------------------------------------+
+|                                      |
+|      DL Testing Tools Benchmarking   |
+|                                      |
+|            Masters Thesis            |
+|                                      |
++--------------------------------------+
 
 
 Welcome : Input options to run DL benchmakring tasks >>
@@ -31,12 +34,17 @@ Welcome : Input options to run DL benchmakring tasks >>
  Select an option to run Benchmarking method >>
 1. Fill out Tool Run Config >>
 2. Check Tool's Run Config
-3. Execute Benchmarking Tasks (7)
-4. Tasks Info
-5. DL Testing Tools List
-6. Check Version of the tool
-7. -- Help??
-8. EXIT
+3. Install Requirements
+4. Execute Benchmarking Tasks (7)
+5. Tasks Info
+6. DL Testing Tools List
+7. Check Version of the tool
+8. -- Help??
+9. EXIT
+
+
+Enter an option to run the tool [ 1-8 ] = 3
+
 ```
 
 # Latex Document Link
