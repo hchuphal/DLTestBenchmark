@@ -1,0 +1,57 @@
+\newpage
+\begin{algorithm}[H]
+ \label{algo1}
+\DontPrintSemicolon
+ initialization\;
+ Adaptor(postProcessingCommand=FALSE)\; \tcc{Adaptor function to take run command for the DL Testing tool}
+ Configurations()\; \tcc{setup initial Configurations}
+ TasksConfigurations()\; \tcc{setup tasks Configurations}
+ RunConfiguration()\; \tcc{setup run Configurations, import Library and datasets}
+ ResultConfiguration()\; \tcc{setup result Configurations}
+ \While{ValidRunCommand}{
+   initialization\;
+   \tcc{Prepare Datasets for the DL testing tool}
+  \eIf{success}{
+   task1\;
+   task2\;
+    \tcc{Task 2 is big and is divided into 3 sub-tasks}
+     \If{subtask}
+    {
+      subtask1\;
+      subtask2\;
+      subtask3\;  
+    }
+   task3\;
+   task4\;
+   task5\;
+   task6\;
+   task7\;
+   tasksDone = TRUE\;
+   }{
+   exit()\;
+  }
+ }
+  \tcc{If tasks are successfully done, save the logs}
+  \If{tasksDone}
+    {
+        SaveLogs()    \tcp*{save the test report for analysis}
+        \If{success}
+        {DisplayReportPath()}
+    }
+    \Else
+    {
+        \tcc{Check which tasks failed}
+        \For{tasks}    
+        { 
+        	checkTasksStatus();
+        }
+    }
+    
+    \tcc{Now this is a While loop}
+   \While{postProcessingCommand==TRUE}
+   {
+   		parseBugReport();
+   		\tcp*{Parse the saved logs }
+   }
+\caption{Procedure of DL Benchmarking method}
+\end{algorithm}
