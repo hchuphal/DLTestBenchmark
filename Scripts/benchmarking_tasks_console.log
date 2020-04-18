@@ -635,3 +635,16 @@ Benchmarking Tasks Execution Start....
 
 2020-04-18 23:50:19,473 - root - INFO - ********* Tasks Execution Completed Successfully! ********* 
 
+2020-04-19 00:02:20,462 - root - WARNING - Output Config :: Already Exist!
+2020-04-19 00:02:20,466 - root - INFO - 
+
+2020-04-19 00:02:20,466 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-19 00:02:20,466 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-19 00:02:20,467 - root - INFO - Executing DL Testing tool run command_1 : python run.py -lsa
+2020-04-19 00:05:51,361 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 210.89195013 Seconds
+2020-04-19 00:05:51,369 - root - INFO - Executing DL Testing tool run dataset_type : images
+2020-04-19 00:05:51,370 - root - INFO - Executing DL Testing tool run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/sadl-master
+2020-04-19 00:05:51,370 - root - INFO - Executing DL Testing tool run command_2 : python run.py -dsa
