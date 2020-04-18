@@ -1,6 +1,14 @@
-# Masters Thesis Jan- May, 2020 
+# Masters Thesis, Chalmers|GU, Gothenburg, Sweden, 2020
 
-**Benchmarking Deep Learning Testing Techniques**
+**Benchmarking Deep Learning Testing Techniques,**
+
+# Authors :
+```
+Himanshu Chuphal <guschuhi@student.gu.se>, N2COS
+Kristiyan Dimitrov <gusdimkr@student.gu.se>, N2SOF
+
+Supervisor : Robert Feldt, CSE Dept, Chalmers[ GU
+```
 
 # Run as:
 ```
