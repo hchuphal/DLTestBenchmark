@@ -134,12 +134,13 @@ def _main_menu():
     _menu = {
         '1' : _edit_config,
         '2' : _check_config,
-        '3' : _run_tasks,
-        '4' : _check_tasks,
-        '5' : _dl_testing_tool_,
-        '6' : _check_version,
-        '7' : _help_,
-        '8' : _quit
+        '3' :  _install_req,
+        '4' : _run_tasks,
+        '5' : _check_tasks,
+        '6' : _dl_testing_tool_,
+        '7' : _check_version,
+        '8' : _help_,
+        '9' : _quit
     }
 
     _menu[_option]()
@@ -152,6 +153,9 @@ def subprocess_cmd(command):
 
 def _quit():
     exit(0)
+
+def _install_req():
+    os.system('pip install -r requirements.txt')
 
 def _check_tasks_status():
     print
@@ -368,3 +372,5 @@ def _run_package_level(_vendor, _tech, _input_file, _input_xml, _module_name):
 
 if __name__ == '__main__':
     main()
+
+

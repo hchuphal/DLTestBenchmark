@@ -1,9 +1,9 @@
 {
    "toolName": "DeepXplore",                    
    "description": "Whitebox DL testing tool",
-   "authors": "Din Lin",
+   "authors": "K. Pei, Y. Cao, J. Yang, and S. Jana",
    "language": "python",                       
-   "publication": "2018", 
+   "publication": "2016", 
    "path_to_script" : "/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master",                    
    "commands": [
       { "path_1":"/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST",

@@ -648,3 +648,13 @@ Benchmarking Tasks Execution Start....
 2020-04-19 00:05:51,369 - root - INFO - Executing DL Testing tool run dataset_type : images
 2020-04-19 00:05:51,370 - root - INFO - Executing DL Testing tool run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/sadl-master
 2020-04-19 00:05:51,370 - root - INFO - Executing DL Testing tool run command_2 : python run.py -dsa
+2020-04-19 00:22:40,238 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1008.86279106 Seconds
+2020-04-19 00:22:40,241 - root - INFO - Executing DL Testing tool run dataset_type : images
+2020-04-19 00:22:40,245 - root - INFO - Executing DL Testing tool run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/sadl-master
+2020-04-19 00:22:40,247 - root - INFO - Total Execution Time taken to run all the commands :1219.77929592 Seconds
+2020-04-19 00:22:40,255 - root - INFO - 
+Benchmarking Tasks Execution Start....
+2020-04-19 00:22:51,323 - root - INFO - Post processing of result Support :None
+
+2020-04-19 00:22:51,324 - root - INFO - ********* Tasks Execution Completed Successfully! ********* 
+
