@@ -1,0 +1,17 @@
+[94mModel1 loaded[0m
+[94mModel2 loaded[0m
+[94mModel3 loaded[0m
+[92mcovered neurons percentage 52 neurons 0.942, 148 neurons 0.764, 268 neurons 0.668[0m
+[92maveraged covered neurons 0.729[0m
+[92mcovered neurons percentage 52 neurons 0.962, 148 neurons 0.851, 268 neurons 0.799[0m
+[92maveraged covered neurons 0.833[0m
+[92mcovered neurons percentage 52 neurons 0.962, 148 neurons 0.872, 268 neurons 0.840[0m
+[92maveraged covered neurons 0.863[0m
+[92mcovered neurons percentage 52 neurons 0.962, 148 neurons 0.885, 268 neurons 0.854[0m
+[92maveraged covered neurons 0.876[0m
+[92mcovered neurons percentage 52 neurons 0.962, 148 neurons 0.899, 268 neurons 0.858[0m
+[92maveraged covered neurons 0.882[0m
+[92mcovered neurons percentage 52 neurons 0.962, 148 neurons 0.912, 268 neurons 0.877[0m
+[92maveraged covered neurons 0.897[0m
+[92mcovered neurons percentage 52 neurons 0.962, 148 neurons 0.919, 268 neurons 0.881[0m
+[92maveraged covered neurons 0.902[0m

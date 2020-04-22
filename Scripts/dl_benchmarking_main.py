@@ -116,12 +116,13 @@ def _main_menu():
     print Formats.WARNING +" Select an option to run Benchmarking method >> " + Formats.ENDC
     print Formats.WARNING + "1. Fill out Tool Run Config >> " + Formats.ENDC
     print Formats.WARNING + "2. Check Tool's Run Config " + Formats.ENDC
-    print Formats.WARNING + "3. Execute Benchmarking Tasks (7) " + Formats.ENDC
-    print Formats.WARNING + "4. Tasks Info " + Formats.ENDC
-    print Formats.WARNING + "5. DL Testing Tools List" + Formats.ENDC
-    print Formats.WARNING + "6. Check Version of the tool" + Formats.ENDC
-    print Formats.WARNING + "7. -- Help??" + Formats.ENDC
-    print Formats.WARNING + "8. EXIT " + Formats.ENDC
+    print Formats.WARNING + "3. Install Requirements" + Formats.ENDC
+    print Formats.WARNING + "4. Execute Benchmarking Tasks (7) " + Formats.ENDC
+    print Formats.WARNING + "5. Tasks Info " + Formats.ENDC
+    print Formats.WARNING + "6. DL Testing Tools List" + Formats.ENDC
+    print Formats.WARNING + "7. Check Version of the tool" + Formats.ENDC
+    print Formats.WARNING + "8. -- Help??" + Formats.ENDC
+    print Formats.WARNING + "9. EXIT " + Formats.ENDC
     print
     print
 

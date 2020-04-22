@@ -11,21 +11,13 @@
 # -*- coding: utf-8 -*-
 import unittest
 import unittest.runner
-import itertools
-import collections
-import sys
+import itertools, collections
 import argparse
-import os
-import shutil
 import errno
-import json
-import subprocess
-import platform
-import time, timeit
-import logging
-import sys
-import logging
-import shutil
+import time, timeit, sys, platform, subprocess, os
+import logging, shutil, json
+import TestRunner
+import progressbar
 
 # Set up logging and formatting
 logger = logging.getLogger()
@@ -46,16 +38,21 @@ consoleHandler.setLevel(logging.INFO)
 fileHandler.setLevel(logging.INFO)
 logger.setLevel(logging.INFO)
 
+# /Applications/Netron.app/Contents/MacOS/Netron generate neural_networks/benchmarking.h5 b.jpg
+
 # RUN CONFIG for DL TESTING TOOLS
 #_DEFAULT_RUN_CONFIG = 'run_config1.json'
-#_DEFAULT_RUN_CONFIG = 'run_config_deepX.json'     # _DEEPXPLORE_RUN_CONFIG
-#_DEFAULT_RUN_CONFIG = 'run_config_dlfuzz.json'    # _DLFUZZ_RUN_CONFIG
-_DEFAULT_RUN_CONFIG = 'run_config_sadl.json'       # _SADL_RUN_CONFIG
+#_DEFAULT_RUN_CONFIG = 'run_config_deepX.json'      # _DEEPXPLORE_RUN_CONFIG
+_DEFAULT_RUN_CONFIG = 'run_config_dlfuzz.json'     # _DLFUZZ_RUN_CONFIG
+#_DEFAULT_RUN_CONFIG = 'run_config_sadl.json'       # _SADL_RUN_CONFIG
+#_DEFAULT_RUN_CONFIG = 'run_config_deepfault.json'  # _DEEPFAULT_RUN_CONFIG
 
 
 _TEMP_DIR = './temp/'
 _TEMP_CONFIG = './temp/run_config_tool.json'
 _OUTPUT = 'output'
+_buffer = []
+final_time = 0.0
 
 class CodeTimer:
     def __init__(self, name=None):
@@ -99,7 +96,7 @@ class BenchmakringTasksResults(unittest.runner.TextTestResult):
         info = super(BenchmakringTasksResults, self)._exc_info_to_string(err, test)
 
         if self.showAll:
-            info = 'Test number: {index}\n{info}'.format(
+            info = 'Benchmarking Task number: {index}\n{info}'.format(
                 index=test.progress_index,
                 info=info
             )
@@ -127,56 +124,63 @@ class BenchmarkingTasksRunner(unittest.runner.TextTestRunner):
 
 
 class BenchmarkingTasks(unittest.TestCase):
-    """Dummy test case to illustrate usage"""
+    """ Results of 6 Tasks and 3 SubTasks"""
+    with open(_TEMP_CONFIG, 'r') as myfile:
+        json_data=myfile.read()
+    parsed_json = (json.loads(json_data))
+    #print(json.dumps(parsed_json, indent=4, sort_keys=True))
+    obj = json.loads(json_data)
 
-    fail_1 = 0
-    fail_2 = 0
+    language = str(obj['language'])
+    commmands_list = obj['commands']
+    manual_check = obj['manual_check']
+    output_config = obj['output_config']
+    language = obj['language']
+    datasets = obj['datasets_classification']
 
     def setUp(self):
-        self.a = 1
+        #print "Executing ", self._testMethodName
         self._pass = ['yes', 'Yes', 'y', 'Y', 'YES']
         self._fail = ['no', 'No', 'n', 'N', 'NO']
         self._languages = ['python', 'Python', 'PYTHON', 'perl', 'erlang', 'java']
-        self.manual_check = sys.argv[1]
-        self.output_config = sys.argv[2]
-        self.datasets = sys.argv[3]
-        self.language = sys.argv[4]
+        self.manual_check = manual_check
+        self.output_config = output_config
+        self.datasets = datasets
+        self.language = language
         self._os = platform.system()
-        self._time = sys.argv[5]
-        self._command_status = sys.argv[6]
-        #os
+        self._time = final_time
+        self._command_status = _buffer
 
-    def task_1(self):
+    def test_Model_Selection(self):
         time.sleep(1)
-        #print self.manual_check['model_selection']
         assert self.manual_check['model_selection']  in self._pass, "Model Selection is not possible"
 
-    def task_2_1(self):
+    def test_Image_Classifications_Support(self):
         time.sleep(1)
         assert self.datasets['images']  in self._pass, "Image Classifications are not possible"
 
-    def task_2_2(self):
+    def test_SelfDriving_Classifications_Support(self):
         time.sleep(1)
         assert self.datasets['self_driving']  in self._pass, "Self_driving datasets are not possible"
 
-    def task_2_3(self):
+    def test_Texts_Classifications_Support(self):
         time.sleep(1)
         assert self.datasets['texts']  in self._pass, "Texts/Malware datasets are not possible"
 
-    def task_3(self):
+    def test_Retraining(self):
         time.sleep(1)
         assert self.manual_check['retraining']  in self._pass,"Retraining is not possible"
 
-    def task_4(self):
+    def test_Differential_Testing(self):
         time.sleep(1)
         assert self.manual_check['differential_testing'] in self._pass,"Differential Testing is not possible"
 
-    def task_5(self):
+    def test_Execution_Time(self):
         time.sleep(1)
         assert self._time > 1.0 ,"Execution time of Testing is less than 1 second"
         #logger.info("\n Total time taken in ms : " + str(self._time))
 
-    def task_6(self):
+    def test_Output_Capabilities(self):
         time.sleep(1)
         assert self.output_config['output_saved'] in self._pass,"Output Saving is NOT possible"
         #logger.info(self._command_status)
@@ -184,14 +188,14 @@ class BenchmarkingTasks(unittest.TestCase):
             if self._command_status[i] != 0:
                 assert self._command_status[i] == 0, "DL Testing Tool command failed to execute!"
 
-    def task_7(self):
+    def test_OS_Support(self):
         time.sleep(1)
         # print self._os #Linux: Linux Mac: Darwin Windows: Windows
         assert self.language in self._languages,"Not support in this OS: " + str(self._os)
 
-
 def get_tests():
-    task_funcs = ['task_1', 'task_2_1', 'task_2_2', 'task_2_3', 'task_3', 'task_4', 'task_5', 'task_6', 'task_7']
+    #task_funcs = ['task_1', 'task_2_1', 'task_2_2', 'task_2_3', 'task_3', 'task_4', 'task_5', 'task_6', 'task_7']
+    task_funcs = ['test_Model_Selection', 'test_Image_Classifications_Support', 'test_SelfDriving_Classifications_Support', 'test_Texts_Classifications_Support', 'test_Retraining', 'test_Differential_Testing', 'test_Execution_Time', 'test_Output_Capabilities', 'test_OS_Support']
     return [BenchmarkingTasks(func) for func in task_funcs]
 
 def _make_runconfig():
@@ -239,12 +243,16 @@ if __name__ == '__main__':
     output_config = obj['output_config']
     language = obj['language']
     datasets = obj['datasets_classification']
+    # 3. Run each command specified in the run configuration of the DL testing tool
     spath = str(obj['path_to_script'])
     _total_commands = [command for command in commmands_list if command["dataset_type"] != 'pass']
     logger.info("\n")
     logger.info ("\n********* Tasks Execution Started ...... *********")
     logger.info('Total ' + str(len(_total_commands))+ ' commands to execute for Benchmarking!\n\n')
-    _buffer = []
+    #_buffer = []
+    bar = progressbar.ProgressBar(maxval=9, \
+    widgets=[progressbar.Bar('#', 'Progress ....[', ']'), ' ', progressbar.Percentage()])
+    bar.start()
     start = time.time()
     for i, commands in enumerate(commmands_list): 
         for command, argument  in commands.items():
@@ -266,16 +274,17 @@ if __name__ == '__main__':
                         
                     #returned_output = subprocess.check_output('python gen_diff.py light 1 0.1 10 20 50 0')
     final_time = (time.time() - start)
+    bar.finish()
     print("\n")
     logger.info("Total Execution Time taken to run all the commands :" +str(final_time) +' Seconds')
     parser = argparse.ArgumentParser()
-    #parser.add_argument('--input', default='My Input')
+    #parser.add_argument('discover', default='discover')
     #parser.add_argument('filename', default='some_file.txt')
     #parser.add_argument('unittest_args', nargs='*')
     #parser.add_argument('--name', required=True)
-    args = parser.parse_args()
+    #args = parser.parse_args()
     #sys.argv[1:] = args.unittest_args
-    sys.argv[1:] = [manual_check, output_config, datasets, language, final_time, _buffer]
+    #sys.argv[1:] = [manual_check, output_config, datasets, language, final_time, _buffer]
     test_suite = unittest.TestSuite()
 
     repetitions = 1  # how many times to we want to repeat the tasks (7)
@@ -284,7 +293,10 @@ if __name__ == '__main__':
         test_suite.addTests(tasks)
     logger.info("\nBenchmarking Tasks Execution Start....")
     time.sleep(1)
-    BenchmarkingTasksRunner(verbosity=2).run(test_suite)
+    #del sys.argv[1:]
+    TestRunner.main()
+    #BenchmarkingTasksRunner(verbosity=2).run(test_suite)
+    runner.run(test_suite)
     time.sleep(1)
     # post processing of results--- optional
     logger.info("Post processing of result Support :"+ output_config['postProcessingCommand']+'\n')
@@ -293,6 +305,6 @@ if __name__ == '__main__':
         logger.info("Saved Output Path :" + output_config['output_default_path'])
         logger.info("Command :" + output_config['postProcessingCommand'])
         logger.info("Parse path :" + output_config['parser_path']+'\n')
-
     
     logger.info("********* Tasks Execution Completed Successfully! ********* \n")
+    
