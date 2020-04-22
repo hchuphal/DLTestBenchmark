@@ -9,15 +9,12 @@
 ##############################################################################################
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import unittest
-import unittest.runner
+import unittest, unittest.runner
 import itertools, collections
-import argparse
-import errno
+import argparse, errno
 import time, timeit, sys, platform, subprocess, os
 import logging, shutil, json
-import TestRunner
-import progressbar
+import TestRunner, progressbar 
 
 # Set up logging and formatting
 logger = logging.getLogger()
@@ -291,7 +288,7 @@ if __name__ == '__main__':
     tasks = get_tests()
     for __ in xrange(0, repetitions):
         test_suite.addTests(tasks)
-    logger.info("\nExecuting Tasks Execution one by one....")
+    logger.info("\nExecuting Benchmakring Tasks one by one....")
     time.sleep(1)
     #del sys.argv[1:]
     TestRunner.main()
@@ -304,7 +301,6 @@ if __name__ == '__main__':
         logger.info(" Details of Post processing script :")
         logger.info("Saved Output Path :" + output_config['output_default_path'])
         logger.info("Command :" + output_config['postProcessingCommand'])
-        logger.info("Parse path :" + output_config['parser_path']+'\n')
-    
+        logger.info("Parse path :" + output_config['parser_path']+'\n')  
     logger.info("********* Tasks Execution Completed Successfully! ********* \n")
     
