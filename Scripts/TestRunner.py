@@ -303,11 +303,10 @@ class TestRunner(Template_mixin):
     def run(self, test):
         "Run the given test case or test suite."
         result = _TestResult(self.verbosity)
-        print test
         test(result)
         self.stopTime = datetime.datetime.now()
         self.generateReport(test, result)
-        print >> sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime)
+        #print >> sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime)
         return result
 
 
@@ -470,7 +469,7 @@ class TestProgram(unittest.TestProgram):
         # base class's testRunner parameter is not useful because it means
         # we have to instantiate TestRunner before we know self.verbosity.
         if self.testRunner is None:
-            self.testRunner = TestRunner(verbosity=1)
+            self.testRunner = TestRunner(verbosity=self.verbosity)
         unittest.TestProgram.runTests(self)
 
 main = TestProgram
