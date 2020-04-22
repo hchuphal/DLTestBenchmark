@@ -291,7 +291,7 @@ if __name__ == '__main__':
     tasks = get_tests()
     for __ in xrange(0, repetitions):
         test_suite.addTests(tasks)
-    logger.info("\nBenchmarking Tasks Execution Start....")
+    logger.info("\nExecuting Tasks Execution one by one....")
     time.sleep(1)
     #del sys.argv[1:]
     TestRunner.main()
