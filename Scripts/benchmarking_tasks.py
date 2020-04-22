@@ -294,6 +294,8 @@ if __name__ == '__main__':
     TestRunner.main()
     #BenchmarkingTasksRunner(verbosity=2).run(test_suite)
     runner.run(test_suite)
+    final_time_2 = (time.time() - start)
+    logger.info("Total Execution Time taken by Benchmakring Tool :" +str(final_time_2) +' Seconds')
     time.sleep(1)
     # post processing of results--- optional
     logger.info("Post processing of result Support :"+ output_config['postProcessingCommand']+'\n')
