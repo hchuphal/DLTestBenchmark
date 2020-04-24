@@ -28,6 +28,17 @@
       "command_7": "pass",
       "dataset_type": "pass"}
    ],
+   "benchmarking_commands": [
+      { "path_1":"pass",
+      "command_1": "pass",
+      "dataset_type": "pass"},
+      {"path_2":"pass",
+      "command_2": "pass",
+      "dataset_type": "pass"},
+      { "path_3":"pass",
+      "command_3": "pass",
+      "dataset_type": "texts"}
+   ],
    "manual_check": {
       "model_selection" : "No",
       "retraining" : "No",

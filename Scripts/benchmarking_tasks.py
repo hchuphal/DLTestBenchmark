@@ -8,6 +8,7 @@
 #
 ##############################################################################################
 #!/usr/bin/python
+#!/usr/local/bin/python
 # -*- coding: utf-8 -*-
 import unittest, unittest.runner
 import itertools, collections
@@ -15,7 +16,6 @@ import argparse, errno
 import time, timeit, sys, platform, subprocess, os
 import logging, shutil, json
 import TestRunner, progressbar 
-import psutil
 from datetime import datetime
 
 # Set up logging and formatting
@@ -41,16 +41,17 @@ logger.setLevel(logging.INFO)
 
 # RUN CONFIG for DL TESTING TOOLS
 #_DEFAULT_RUN_CONFIG = 'run_config1.json'
-_DEFAULT_RUN_CONFIG = 'run_config_deepX.json'      # _DEEPXPLORE_RUN_CONFIG
+#_DEFAULT_RUN_CONFIG = 'run_config_deepX.json'      # _DEEPXPLORE_RUN_CONFIG
 #_DEFAULT_RUN_CONFIG = 'run_config_dlfuzz.json'     # _DLFUZZ_RUN_CONFIG
 #_DEFAULT_RUN_CONFIG = 'run_config_sadl.json'       # _SADL_RUN_CONFIG
-#_DEFAULT_RUN_CONFIG = 'run_config_deepfault.json'  # _DEEPFAULT_RUN_CONFIG
+_DEFAULT_RUN_CONFIG = 'run_config_deepfault.json'  # _DEEPFAULT_RUN_CONFIG
 
 
 _TEMP_DIR = './temp/'
 _TEMP_CONFIG = './temp/run_config_tool.json'
 _OUTPUT = 'output'
 _buffer = []
+_ben_buffer = []
 final_time = 0.0
 
 class CodeTimer:
@@ -124,18 +125,6 @@ class BenchmarkingTasksRunner(unittest.runner.TextTestRunner):
 
 class BenchmarkingTasks(unittest.TestCase):
     """ Results of 6 Tasks and 3 SubTasks"""
-    with open(_TEMP_CONFIG, 'r') as myfile:
-        json_data=myfile.read()
-    parsed_json = (json.loads(json_data))
-    #print(json.dumps(parsed_json, indent=4, sort_keys=True))
-    obj = json.loads(json_data)
-
-    language = str(obj['language'])
-    commmands_list = obj['commands']
-    manual_check = obj['manual_check']
-    output_config = obj['output_config']
-    language = obj['language']
-    datasets = obj['datasets_classification']
 
     def setUp(self):
         #print "Executing ", self._testMethodName
@@ -149,7 +138,9 @@ class BenchmarkingTasks(unittest.TestCase):
         self._os = platform.system()
         self._time = final_time
         self._command_status = _buffer
-
+        self._ben_c = ben_commmands_list
+        self._ben_buffer_img = _ben_buffer_img
+       
     def test_Model_Selection(self):
         time.sleep(1)
         assert self.manual_check['model_selection']  in self._pass, "Model Selection is not possible"
@@ -157,14 +148,26 @@ class BenchmarkingTasks(unittest.TestCase):
     def test_Image_Classifications_Support(self):
         time.sleep(1)
         assert self.datasets['images']  in self._pass, "Image Classifications are not possible"
+        for i, status in enumerate(self._ben_buffer_img):
+            if self._ben_buffer_img[i] != 0 and str(self.manual_check['model_selection']).lower() == 'yes':
+                print("With Image Classifications Model:Images_cifar10_1_512_leaky_relu_model1")
+                assert self._command_status[i] == 0, "DL Testing tool failed on Images_cifar10_1_512_leaky_relu_model1"
 
     def test_SelfDriving_Classifications_Support(self):
         time.sleep(1)
         assert self.datasets['self_driving']  in self._pass, "Self_driving datasets are not possible"
+        for i, status in enumerate(_ben_buffer_sd):
+            if self._ben_buffer_sd[i] != 0 and str(self.manual_check['model_selection']).lower() == 'yes':
+                print("With Self_driving Classifications Model:Self_Driving_CNN_model1")
+                assert self._command_status[i] == 0, "DL Testing tool failed on Self_Driving_CNN_model1"
 
     def test_Texts_Classifications_Support(self):
         time.sleep(1)
         assert self.datasets['texts']  in self._pass, "Texts/Malware datasets are not possible"
+        for i, status in enumerate(_ben_buffer_tex):
+            if self._ben_buffer_tex[i] != 0 and str(self.manual_check['model_selection']).lower() == 'yes':
+                print("With Texts Classifications Model:Text_imdb_CNN_model2")
+                assert self._ben_buffer_tex[i] == 0, "DL Testing tool failed on Text_imdb_CNN_model2"
 
     def test_Retraining(self):
         time.sleep(1)
@@ -176,7 +179,9 @@ class BenchmarkingTasks(unittest.TestCase):
 
     def test_Execution_Time(self):
         time.sleep(1)
-        assert self._time > 1.0 ,"Execution time of Testing is less than 1 second"
+        formatted_time = "{:.2f}".format(self._time)
+        assert self._time > 10.0 ,"Execution time of Testing is less than 10 second"
+        print(str(formatted_time)+ ' Seconds')
         #logger.info("\n Total time taken in ms : " + str(self._time))
 
     def test_Output_Capabilities(self):
@@ -233,7 +238,6 @@ if __name__ == '__main__':
         with open(_TEMP_CONFIG, 'r') as myfile:
             json_data=myfile.read()
     parsed_json = (json.loads(json_data))
-    #print(json.dumps(parsed_json, indent=4, sort_keys=True))
     obj = json.loads(json_data)
 
     language = str(obj['language'])
@@ -242,9 +246,11 @@ if __name__ == '__main__':
     output_config = obj['output_config']
     language = obj['language']
     datasets = obj['datasets_classification']
+    ben_commmands_list = obj['benchmarking_commands']
     # 3. Run each command specified in the run configuration of the DL testing tool
     spath = str(obj['path_to_script'])
     _total_commands = [command for command in commmands_list if command["dataset_type"] != 'pass']
+    _total_ben_commands = [command for command in commmands_list if command["dataset_type"] != 'pass']
     logger.info("\n")
     logger.info ("\n********* Tasks Execution Started ...... *********")
     logger.info('Total ' + str(len(_total_commands))+ ' commands to execute for Benchmarking!\n\n')
@@ -256,7 +262,7 @@ if __name__ == '__main__':
     for i, commands in enumerate(commmands_list): 
         for command, argument  in commands.items():
             if argument != 'pass':
-                logger.info('Executing DL Testing tool ' +'run ' + command +' : '+ argument)
+                logger.info('Executing DL Testing tool on default Models ' +'run ' + command +' : '+ argument)
                 if 'dataset_type' in ['images', 'texts', 'self_driving']:
                     logger.info('Dataset Classifications'+ dataset_type)
                     # change to working directory of the script
@@ -270,8 +276,44 @@ if __name__ == '__main__':
                             #_write_output(_buffer)
                         except Exception as e:
                             logger.error("Benchmarking DL Testing Tool command failed!")
-                        
-                    #returned_output = subprocess.check_output('python gen_diff.py light 1 0.1 10 20 50 0')
+    # 3 Run on Benchmarking models
+    ic = tc = sdc = 0
+    _ben_buffer_img = []
+    _ben_buffer_sd = []
+    _ben_buffer_tex = []
+    if str(manual_check['model_selection']).lower() == 'yes':
+        logger.info('Total ' + str(len(_total_ben_commands))+ ' commands to execute for Benchmarking Models!\n\n')
+        for i, commands in enumerate(ben_commmands_list): 
+            for command, argument  in commands.items():
+                if argument != 'pass':
+                    logger.info('Executing DL Testing tool on Benchmarking Models ' +'run ' + command +' : '+ argument)
+                    if 'dataset_type' in ['images', 'texts', 'self_driving']:
+                        logger.info('Dataset Classifications'+ dataset_type)
+                        # change to working directory of the script
+                    if str(commands["path_"+str(i+1)]).lower() != 'pass':
+                        os.chdir(commands["path_"+str(i+1)])
+                    if "python" in argument:
+                        with CodeTimer(' Time to run the  testing command :'):
+                            try:
+                                if str(datasets['images']).lower() == 'yes' and \
+                                    ic != 1:
+                                    #_images_command = _ben_images = 
+                                    _ben_status = os.system(argument)
+                                    _ben_buffer_img.append(_ben_status)
+                                    ic = 1
+                                elif str(datasets['self_driving']).lower() == 'yes' and \
+                                    isd != 1:
+                                    _ben_status = os.system(argument)
+                                    _ben_buffer_sd.append(_ben_status)
+                                elif str(datasets['texts']).lower() == 'yes' and \
+                                    it != 1:
+                                    _ben_status = os.system(argument)
+                                    _ben_buffer_tex.append(_ben_status)
+                                else:
+                                    ben_command = 'Command NOT Supported!'
+                            except Exception as e:
+                                logger.error("Benchmarking DL Testing Tool command failed!")
+
     final_time = (time.time() - start)
     bar.finish()
     print("\n")
@@ -292,7 +334,6 @@ if __name__ == '__main__':
         test_suite.addTests(tasks)
     logger.info("\nExecuting Benchmakring Tasks one by one....")
     time.sleep(1)
-    #del sys.argv[1:]
     TestRunner.main()
     #BenchmarkingTasksRunner(verbosity=2).run(test_suite)
     runner.run(test_suite)
@@ -307,4 +348,5 @@ if __name__ == '__main__':
         logger.info("Command :" + output_config['postProcessingCommand'])
         logger.info("Parse path :" + output_config['parser_path']+'\n')  
     logger.info("********* Tasks Execution Completed Successfully! ********* \n")
+    #end
     

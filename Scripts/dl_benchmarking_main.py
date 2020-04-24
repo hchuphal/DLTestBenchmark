@@ -9,14 +9,10 @@
 ##############################################################################################
 
 # -*- coding: utf-8 -*-
-import json
-import os
-import re
+import json, os, re, sys, subprocess
 from texttable import Texttable
 from collections import OrderedDict
 from collections import defaultdict
-import subprocess
-import sys
 from subprocess import call
 from bunch import Bunch
 from time import sleep
