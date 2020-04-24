@@ -140,6 +140,8 @@ class BenchmarkingTasks(unittest.TestCase):
         self._command_status = _buffer
         self._ben_c = ben_commmands_list
         self._ben_buffer_img = _ben_buffer_img
+        self._ben_buffer_sd =_ben_buffer_sd
+        self._ben_buffer_tex = _ben_buffer_tex
        
     def test_Model_Selection(self):
         time.sleep(1)
@@ -149,23 +151,29 @@ class BenchmarkingTasks(unittest.TestCase):
         time.sleep(1)
         assert self.datasets['images']  in self._pass, "Image Classifications are not possible"
         for i, status in enumerate(self._ben_buffer_img):
-            if self._ben_buffer_img[i] != 0 and str(self.manual_check['model_selection']).lower() == 'yes':
+            if self._ben_buffer_img[i] == 0 and str(self.manual_check['model_selection']).lower() == 'yes':
                 print("With Image Classifications Model:Images_cifar10_1_512_leaky_relu_model1")
-                assert self._command_status[i] == 0, "DL Testing tool failed on Images_cifar10_1_512_leaky_relu_model1"
+            elif self._ben_buffer_img[i] != 0 and str(self.manual_check['model_selection']).lower() == 'yes':
+                print("Execution Failed with Model:Images_cifar10_1_512_leaky_relu_model1")
+                assert self._ben_buffer_img[i] == 0, "DL Testing tool failed on Images_cifar10_1_512_leaky_relu_model1"
 
     def test_SelfDriving_Classifications_Support(self):
         time.sleep(1)
         assert self.datasets['self_driving']  in self._pass, "Self_driving datasets are not possible"
-        for i, status in enumerate(_ben_buffer_sd):
-            if self._ben_buffer_sd[i] != 0 and str(self.manual_check['model_selection']).lower() == 'yes':
+        for i, status in enumerate(self._ben_buffer_sd):
+            if self._ben_buffer_sd[i] == 0 and str(self.manual_check['model_selection']).lower() == 'yes':
+                print("Execution Failed with Model:Self_Driving_CNN_model1")
+            elif self._ben_buffer_sd[i] != 0 and str(self.manual_check['model_selection']).lower() == 'yes':
                 print("With Self_driving Classifications Model:Self_Driving_CNN_model1")
-                assert self._command_status[i] == 0, "DL Testing tool failed on Self_Driving_CNN_model1"
+                assert self._ben_buffer_sd[i] == 0, "DL Testing tool failed on Self_Driving_CNN_model1"
 
     def test_Texts_Classifications_Support(self):
         time.sleep(1)
         assert self.datasets['texts']  in self._pass, "Texts/Malware datasets are not possible"
-        for i, status in enumerate(_ben_buffer_tex):
-            if self._ben_buffer_tex[i] != 0 and str(self.manual_check['model_selection']).lower() == 'yes':
+        for i, status in enumerate(self._ben_buffer_tex):
+            if self._ben_buffer_tex[i] == 0 and str(self.manual_check['model_selection']).lower() == 'yes':
+                print("Executing Failed with Texts Classifications Model:Text_imdb_CNN_model2")
+            elif self._ben_buffer_tex[i] != 0 and str(self.manual_check['model_selection']).lower() == 'yes':
                 print("With Texts Classifications Model:Text_imdb_CNN_model2")
                 assert self._ben_buffer_tex[i] == 0, "DL Testing tool failed on Text_imdb_CNN_model2"
 
@@ -302,13 +310,15 @@ if __name__ == '__main__':
                                     _ben_buffer_img.append(_ben_status)
                                     ic = 1
                                 elif str(datasets['self_driving']).lower() == 'yes' and \
-                                    isd != 1:
+                                    sdc != 1:
                                     _ben_status = os.system(argument)
                                     _ben_buffer_sd.append(_ben_status)
+                                    sdc = 1
                                 elif str(datasets['texts']).lower() == 'yes' and \
-                                    it != 1:
+                                    tc != 1:
                                     _ben_status = os.system(argument)
                                     _ben_buffer_tex.append(_ben_status)
+                                    tc = 1
                                 else:
                                     ben_command = 'Command NOT Supported!'
                             except Exception as e:
