@@ -382,7 +382,7 @@ class TestRunner(Template_mixin):
         tests = '' 
         for cid, (testClass, classResults) in enumerate(sortedResult): # Iterate over the test cases
             classTable = Table(padding=padding)
-            classTable.addTitles(["Task name", "Failure Message", "Task Status"])
+            classTable.addTitles(["Task name", "Failure Message/Info", "Task Status"])
             # subtotal for a class
             np = nf = ne = 0
             for n,t,o,e in classResults:
@@ -404,7 +404,8 @@ class TestRunner(Template_mixin):
             for tid, (n,test,output,error) in enumerate(classResults): # Iterate over the unit tests
                 classTable.addRow(self._generate_report_test(cid, tid, n, test, output, error))
             tests += str(classTable)
-        table.addRow(["Total", str(result.success_count+result.failure_count+result.error_count), str(result.success_count), str(result.failure_count), str(result.error_count)])   
+        table.addRow(["Total    ",str(result.success_count+result.failure_count+result.error_count), str(result.success_count), str(result.failure_count), str(result.error_count)]) 
+        #status.append(padding+self.bc.PURPLE+'Tasks Failed:'+self.bc.END+' %s\n' % result.failure_count)
         report = self.bc.CYAN+"Summary of Benchmarking Tasks Execution: "+self.bc.END+"\n"+str(table)+tests
         return report
 

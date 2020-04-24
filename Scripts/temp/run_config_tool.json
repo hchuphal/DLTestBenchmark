@@ -30,7 +30,7 @@
    ],
       "benchmarking_commands": [
       { "path_1":"/Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master",
-      "command_1": "python2.7 run.pynn --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10",
+      "command_1": "python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10",
       "dataset_type": "images"},
       {"path_2":"/Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master",
       "command_2": "python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10",

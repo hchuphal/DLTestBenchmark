@@ -124,7 +124,7 @@ class BenchmarkingTasksRunner(unittest.runner.TextTestRunner):
 
 
 class BenchmarkingTasks(unittest.TestCase):
-    """ Results of 6 Tasks and 3 SubTasks"""
+    """ Results of 7 Tasks"""
 
     def setUp(self):
         #print "Executing ", self._testMethodName
@@ -144,11 +144,11 @@ class BenchmarkingTasks(unittest.TestCase):
         self._ben_buffer_tex = _ben_buffer_tex
        
     def test_Model_Selection(self):
-        time.sleep(1)
+        time.sleep(0.2)
         assert self.manual_check['model_selection']  in self._pass, "Model Selection is not possible"
 
     def test_Image_Classifications_Support(self):
-        time.sleep(1)
+        time.sleep(0.2)
         assert self.datasets['images']  in self._pass, "Image Classifications are not possible"
         for i, status in enumerate(self._ben_buffer_img):
             if self._ben_buffer_img[i] == 0 and str(self.manual_check['model_selection']).lower() == 'yes':
@@ -158,7 +158,7 @@ class BenchmarkingTasks(unittest.TestCase):
                 assert self._ben_buffer_img[i] == 0, "DL Testing tool failed on Images_cifar10_1_512_leaky_relu_model1"
 
     def test_SelfDriving_Classifications_Support(self):
-        time.sleep(1)
+        time.sleep(0.2)
         assert self.datasets['self_driving']  in self._pass, "Self_driving datasets are not possible"
         for i, status in enumerate(self._ben_buffer_sd):
             if self._ben_buffer_sd[i] == 0 and str(self.manual_check['model_selection']).lower() == 'yes':
@@ -168,7 +168,7 @@ class BenchmarkingTasks(unittest.TestCase):
                 assert self._ben_buffer_sd[i] == 0, "DL Testing tool failed on Self_Driving_CNN_model1"
 
     def test_Texts_Classifications_Support(self):
-        time.sleep(1)
+        time.sleep(0.2)
         assert self.datasets['texts']  in self._pass, "Texts/Malware datasets are not possible"
         for i, status in enumerate(self._ben_buffer_tex):
             if self._ben_buffer_tex[i] == 0 and str(self.manual_check['model_selection']).lower() == 'yes':
@@ -178,22 +178,22 @@ class BenchmarkingTasks(unittest.TestCase):
                 assert self._ben_buffer_tex[i] == 0, "DL Testing tool failed on Text_imdb_CNN_model2"
 
     def test_Retraining(self):
-        time.sleep(1)
+        time.sleep(0.2)
         assert self.manual_check['retraining']  in self._pass,"Retraining is not possible"
 
     def test_Differential_Testing(self):
-        time.sleep(1)
+        time.sleep(0.2)
         assert self.manual_check['differential_testing'] in self._pass,"Differential Testing is not possible"
 
     def test_Execution_Time(self):
-        time.sleep(1)
+        time.sleep(0.2)
         formatted_time = "{:.2f}".format(self._time)
         assert self._time > 10.0 ,"Execution time of Testing is less than 10 second"
         print(str(formatted_time)+ ' Seconds')
         #logger.info("\n Total time taken in ms : " + str(self._time))
 
     def test_Output_Capabilities(self):
-        time.sleep(1)
+        time.sleep(0.2)
         assert self.output_config['output_saved'] in self._pass,"Output Saving is NOT possible"
         #logger.info(self._command_status)
         for i, status in enumerate(self._command_status):
@@ -201,7 +201,6 @@ class BenchmarkingTasks(unittest.TestCase):
                 assert self._command_status[i] == 0, "DL Testing Tool command failed to execute!"
 
     def test_OS_Support(self):
-        time.sleep(1)
         # print self._os #Linux: Linux Mac: Darwin Windows: Windows
         assert self.language in self._languages,"Not support in this OS: " + str(self._os)
 
