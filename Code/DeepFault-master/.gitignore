@@ -1,0 +1,4 @@
+.idea*
+*.pyc
+experiment/*
+experiments_paper/mnist*

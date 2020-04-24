@@ -117,12 +117,11 @@ def _main_menu():
     print Formats.WARNING + "1. Fill out Tool Run Config >> " + Formats.ENDC
     print Formats.WARNING + "2. Check Tool's Run Config " + Formats.ENDC
     print Formats.WARNING + "3. Install Requirements" + Formats.ENDC
-    print Formats.WARNING + "4. Execute Benchmarking Tasks (7) " + Formats.ENDC
-    print Formats.WARNING + "5. Tasks Info " + Formats.ENDC
-    print Formats.WARNING + "6. DL Testing Tools List" + Formats.ENDC
-    print Formats.WARNING + "7. Check Version of the tool" + Formats.ENDC
-    print Formats.WARNING + "8. -- Help??" + Formats.ENDC
-    print Formats.WARNING + "9. EXIT " + Formats.ENDC
+    print Formats.WARNING + "4. Execute Benchmarking Tasks " + Formats.ENDC
+    print Formats.WARNING + "5. Benchmakring Tasks Info " + Formats.ENDC
+    print Formats.WARNING + "6. Check System Configuration" + Formats.ENDC
+    print Formats.WARNING + "7. Check Version of the tool and --Help?" + Formats.ENDC
+    print Formats.WARNING + "8. EXIT " + Formats.ENDC
     print
     print
 
@@ -138,10 +137,9 @@ def _main_menu():
         '3' :  _install_req,
         '4' : _run_tasks,
         '5' : _check_tasks,
-        '6' : _dl_testing_tool_,
-        '7' : _check_version,
-        '8' : _help_,
-        '9' : _quit
+        '6' : _system_config,
+        '7' : _help_,
+        '8' : _quit
     }
 
     _menu[_option]()
@@ -158,150 +156,16 @@ def _quit():
 def _install_req():
     os.system('pip install -r requirements.txt')
 
-def _check_tasks_status():
-    print
-    print
-    os.system('clear')
-    print "*" * 50
-    package = 0
-    classF = 0
-    print "Enter the path of the project home directory"
-    DIR = raw_input("Project Full Path = ") 
-    #DIR = './qualyzer/'
-    for root, dirs, files in os.walk(DIR):
-         for file in files:    
-            if file.endswith('.java'):
-                classF += 1
-    print "Total number of classe(s) found ::"
-    print classF
-    path, dirs, files = next(os.walk(DIR))
-    print "Total number package in the project ::"
-    #print len(dirs)
-    # prog = re.compile('(?:.*)')
-    dirs[:] = [x for x in dirs if ".git" not in x]
-    print len(dirs)
-    print  dirs
-    package_dir = 'cd '+ DIR +''
-    print package_dir
-    os.system(package_dir)
-    print "Enter the Multiple Package names seperated comma(,)"
-    interF = raw_input("Package names = ") 
-    pack_list = list(interF.split(",")) 
-    for i in pack_list: 
-        print "Generating input for Class Diagram...."
-        command_1 = 'java -jar plantuml-dependency-cli-1.4.0-jar-with-dependencies.jar -b '+ DIR+'/'+ i + ' -o '+ i +'.txt'
-        print command_1
-        os.system(command_1)
-    [s + '.txt' for s in pack_list]
-    pack_list
-    print "Now Generating the Graph...."
-    for i in pack_list:
-        command_2 = 'java -jar -DPLANTUML_LIMIT_SIZE=81920 plantuml.jar '+ i +'.txt'+ ''
-        print command_2
-        os.system(command_2)
-        print "Opening the class Diagram...."
-        os.system('open '+ i +'.png')
-    #os.system('dot -Tpng -O input.txt')
-    print "*" * 50
-    print
-    print
-    _main_menu()
-
-def _check_output():
-    print
-    print
-    os.system('clear')
-    print "*" * 50
-    package = 0
-    classF = 0
-    print "Enter the path of the project home directory"
-    DIR = raw_input("Project Full Path = ") 
-    #DIR = './qualyzer/'
-    for root, dirs, files in os.walk(DIR):
-         for file in files:    
-            if file.endswith('.java'):
-                classF += 1
-    print "Total number of classe(s) found ::"
-    print classF
-    path, dirs, files = next(os.walk(DIR))
-    print "Total number package in the project ::"
-    #print len(dirs)
-    # prog = re.compile('(?:.*)')
-    dirs[:] = [x for x in dirs if ".git" not in x]
-    print len(dirs)
-    print  dirs
-    print "Enter the package name to create the Class Diagram"
-    interF = raw_input("Package path/name = ") 
-    print "Generating input for Class Diagram...."
-    command_1 = 'java -jar plantuml-dependency-cli-1.4.0-jar-with-dependencies.jar -b '+ DIR+'/'+interF + ' -o input.txt'
-    #print command_1
-    os.system(command_1)
-    print "Now Generating the Graph...."
-    command_2 = 'java -jar -DPLANTUML_LIMIT_SIZE=81920 plantuml.jar input.txt'
-    os.system(command_2)
-    print "Opening the class Diagram...."
-    os.system('open input.png')
-    #os.system('dot -Tpng -O input.txt')
-    print "*" * 50
-    print
-    print
-    _main_menu()
-
-def _check_parsing():
-    print
-    print
-    os.system('clear')
-    print "*" * 50
-    package = 0
-    classF = 0
-    print "Enter the path of the project home directory"
-    DIR = raw_input("Project Full Path = ") 
-    #DIR = './qualyzer/'
-    for root, dirs, files in os.walk(DIR):
-         for file in files:    
-            if file.endswith('.java'):
-                classF += 1
-    print "Total number of classe(s) found ::"
-    print classF
-    path, dirs, files = next(os.walk(DIR))
-    print "Total number package in the project ::"
-    #print len(dirs)
-    # prog = re.compile('(?:.*)')
-    dirs[:] = [x for x in dirs if ".git" not in x]
-    print len(dirs)
-    print  dirs
-    print "Enter the package name to create the Class Diagram"
-    interF = raw_input("Package path/name = ") 
-    print "Enter the classe(s) names or pattern to exclude ="
-    classN = raw_input("Class name or pattern = ")
-    #class_list = list(classN.split(",")) 
-    print "Generating input for Class Diagram...."
-    exclude = '*'+classN+'*.java'
-    command_1 = 'java -jar plantuml-dependency-cli-1.4.0-jar-with-dependencies.jar -b '+ DIR+'/'+interF + ' -o input.txt -e '+ exclude + ' '
-    #-e *Code*.java
-    print command_1
-    os.system(command_1)
-    print "Now Generating the Graph...."
-    command_2 = 'java -jar -DPLANTUML_LIMIT_SIZE=81920 plantuml.jar input.txt'
-    os.system(command_2)
-    print "Opening the class Diagram...."
-    os.system('open input.png')
-    #os.system('dot -Tpng -O input.txt')
-    print "*" * 50
-    print
-    print
-    _main_menu()
-
-def _check_version():
-    command_1 = 'python2.7 --version'
-    #print command_1
-    os.system(command_1)
-    _main_menu()
 
 def _help_():
-    command_1 = 'python2.7 dl_benchmarking_main.py --help'
+    command_1 = 'Please run as "python2.7 dl_benchmarking_main.py"'
     #print command_1
-    os.system(command_1)
+    print(command_1)
+
+    command_2 = 'python2.7 --version'
+    #print command_1
+    print("\nDL Testing Tools Benchmarking Design v 1.0 and Python version Installed: ")
+    os.system(command_2)
     _main_menu()
 
 
@@ -360,12 +224,20 @@ def _run_tasks():
     _main_menu()
 
 
-def _dl_testing_tool_():
-    pass
+def _system_config():
+    print
+    print "*" * 50
+    command_3 = 'python3.7 system.py'
+    os.system(command_3)
+    print "*" * 50
+    print
+    _main_menu()
 
 
 def _check_tasks():
-    pass
+    print("List of Tasks to be Executed as a part Benchmarking Design :")
+    os.system('cat tasks_info.txt')
+    _main_menu()
 
 
 def _run_package_level(_vendor, _tech, _input_file, _input_xml, _module_name):

@@ -17,7 +17,7 @@ def get_size(bytes, suffix="B"):
 
 print("="*40, "System Information", "="*40)
 uname = platform.uname()
-print(f"System: {uname.system}" +  " and Release: {uname.release}")
+print(f"System: {uname.system}" +  f" and Release: {uname.release}")
 #print(f"Node Name: {uname.node}")
 #print(f"Release: {uname.release}")
 print(f"Version: {uname.version}")
@@ -42,5 +42,5 @@ print(f"Current Frequency: {cpufreq.current:.2f}Mhz")
 #print("CPU Usage Per Core:")
 #for i, percentage in enumerate(psutil.cpu_percent(percpu=True, interval=1)):
 #    print(f"Core {i}: {percentage}%")
-print(f"Total CPU Usage: {psutil.cpu_percent()}%")
-
+print(psutil.virtual_memory())  # physical memory usage
+print('System Memory % used:', psutil.virtual_memory()[2])

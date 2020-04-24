@@ -1,0 +1,10 @@
+• T1: Model Selection
+• T2: Diverse Dataset
+      T2_1 : Images Classification
+      T2_2 : Self_Driving Classification
+      T2_3 : Texts Classification
+• T3: Retraining
+• T4: Cross-referencing Oracle
+• T5: Execution Time
+• T6: Output Capabilities
+• T7: Platform Support
