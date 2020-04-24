@@ -1,0 +1,34 @@
+[GCC 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.2)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+>>> model = tf.keras.models.load_model('Text_babi_RNN_model1.h5')
+2020-04-24 02:20:29.275672: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-24 02:20:29.301847: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fe2a991fbd0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-04-24 02:20:29.301881: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+>>> model.summary()
+Model: "model_1"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to
+==================================================================================================
+input_1 (InputLayer)            [(None, 552)]        0
+__________________________________________________________________________________________________
+input_2 (InputLayer)            [(None, 5)]          0
+__________________________________________________________________________________________________
+embedding_1 (Embedding)         (None, 552, 50)      1800        input_1[0][0]
+__________________________________________________________________________________________________
+embedding_2 (Embedding)         (None, 5, 50)        1800        input_2[0][0]
+__________________________________________________________________________________________________
+lstm_1 (LSTM)                   (None, 100)          60400       embedding_1[0][0]
+__________________________________________________________________________________________________
+lstm_2 (LSTM)                   (None, 100)          60400       embedding_2[0][0]
+__________________________________________________________________________________________________
+concatenate_1 (Concatenate)     (None, 200)          0           lstm_1[0][0]
+                                                                 lstm_2[0][0]
+__________________________________________________________________________________________________
+dense_1 (Dense)                 (None, 36)           7236        concatenate_1[0][0]
+==================================================================================================
+Total params: 131,636
+Trainable params: 131,636
+Non-trainable params: 0
+
+{"class_name": "Model", "keras_version": "2.2.4-tf", "config": {"layers": [{"class_name": "InputLayer", "config": {"ragged": false, "dtype": "int32", "batch_input_shape": [null, 552], "name": "input_1", "sparse": false}, "inbound_nodes": [], "name": "input_1"}, {"class_name": "InputLayer", "config": {"ragged": false, "dtype": "int32", "batch_input_shape": [null, 5], "name": "input_2", "sparse": false}, "inbound_nodes": [], "name": "input_2"}, {"class_name": "Embedding", "config": {"embeddings_initializer": {"class_name": "RandomUniform", "config": {"maxval": 0.05, "seed": null, "minval": -0.05}}, "name": "embedding_1", "dtype": "float32", "output_dim": 50, "trainable": true, "embeddings_regularizer": null, "input_dim": 36, "mask_zero": false, "embeddings_constraint": null, "batch_input_shape": [null, null], "activity_regularizer": null, "input_length": null}, "inbound_nodes": [[["input_1", 0, 0, {}]]], "name": "embedding_1"}, {"class_name": "Embedding", "config": {"embeddings_initializer": {"class_name": "RandomUniform", "config": {"maxval": 0.05, "seed": null, "minval": -0.05}}, "name": "embedding_2", "dtype": "float32", "output_dim": 50, "trainable": true, "embeddings_regularizer": null, "input_dim": 36, "mask_zero": false, "embeddings_constraint": null, "batch_input_shape": [null, null], "activity_regularizer": null, "input_length": null}, "inbound_nodes": [[["input_2", 0, 0, {}]]], "name": "embedding_2"}, {"class_name": "LSTM", "config": {"recurrent_activation": "hard_sigmoid", "dtype": "float32", "trainable": true, "recurrent_initializer": {"class_name": "Orthogonal", "config": {"seed": null, "gain": 1.0}}, "use_bias": true, "bias_regularizer": null, "return_state": false, "unroll": false, "bias_initializer": {"class_name": "Zeros", "config": {}}, "units": 100, "unit_forget_bias": true, "dropout": 0.0, "recurrent_dropout": 0.0, "kernel_initializer": {"class_name": "VarianceScaling", "config": {"distribution": "uniform", "scale": 1.0, "seed": null, "mode": "fan_avg"}}, "kernel_constraint": null, "time_major": false, "activation": "tanh", "stateful": false, "activity_regularizer": null, "recurrent_regularizer": null, "name": "lstm_1", "bias_constraint": null, "go_backwards": false, "implementation": 1, "kernel_regularizer": null, "return_sequences": false, "recurrent_constraint": null}, "inbound_nodes": [[["embedding_1", 0, 0, {}]]], "name": "lstm_1"}, {"class_name": "LSTM", "config": {"recurrent_activation": "hard_sigmoid", "dtype": "float32", "trainable": true, "recurrent_initializer": {"class_name": "Orthogonal", "config": {"seed": null, "gain": 1.0}}, "use_bias": true, "bias_regularizer": null, "return_state": false, "unroll": false, "bias_initializer": {"class_name": "Zeros", "config": {}}, "units": 100, "unit_forget_bias": true, "dropout": 0.0, "recurrent_dropout": 0.0, "kernel_initializer": {"class_name": "VarianceScaling", "config": {"distribution": "uniform", "scale": 1.0, "seed": null, "mode": "fan_avg"}}, "kernel_constraint": null, "time_major": false, "activation": "tanh", "stateful": false, "activity_regularizer": null, "recurrent_regularizer": null, "name": "lstm_2", "bias_constraint": null, "go_backwards": false, "implementation": 1, "kernel_regularizer": null, "return_sequences": false, "recurrent_constraint": null}, "inbound_nodes": [[["embedding_2", 0, 0, {}]]], "name": "lstm_2"}, {"class_name": "Concatenate", "config": {"dtype": "float32", "trainable": true, "name": "concatenate_1", "axis": -1}, "inbound_nodes": [[["lstm_1", 0, 0, {}], ["lstm_2", 0, 0, {}]]], "name": "concatenate_1"}, {"class_name": "Dense", "config": {"kernel_initializer": {"class_name": "VarianceScaling", "config": {"distribution": "uniform", "scale": 1.0, "seed": null, "mode": "fan_avg"}}, "name": "dense_1", "kernel_constraint": null, "bias_regularizer": null, "bias_constraint": null, "dtype": "float32", "activation": "softmax", "trainable": true, "kernel_regularizer": null, "bias_initializer": {"class_name": "Zeros", "config": {}}, "units": 36, "use_bias": true, "activity_regularizer": null}, "inbound_nodes": [[["concatenate_1", 0, 0, {}]]], "name": "dense_1"}], "input_layers": [["input_1", 0, 0], ["input_2", 0, 0]], "output_layers": [["dense_1", 0, 0]], "name": "model_1"}, "backend": "tensorflow"}
