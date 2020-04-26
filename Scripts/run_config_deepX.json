@@ -46,7 +46,7 @@
    },
    "datasets_classification": {
       "images" : "Yes",
-      "self_driving" : "No",
+      "self_driving" : "Yes",
       "texts" : "Yes"
    },
    "output_config" : {

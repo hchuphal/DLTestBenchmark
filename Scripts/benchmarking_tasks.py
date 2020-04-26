@@ -42,9 +42,9 @@ logger.setLevel(logging.INFO)
 # RUN CONFIG for DL TESTING TOOLS
 #_DEFAULT_RUN_CONFIG = 'run_config1.json'
 #_DEFAULT_RUN_CONFIG = 'run_config_deepX.json'      # _DEEPXPLORE_RUN_CONFIG
-#_DEFAULT_RUN_CONFIG = 'run_config_dlfuzz.json'     # _DLFUZZ_RUN_CONFIG
+_DEFAULT_RUN_CONFIG = 'run_config_dlfuzz.json'     # _DLFUZZ_RUN_CONFIG
 #_DEFAULT_RUN_CONFIG = 'run_config_sadl.json'       # _SADL_RUN_CONFIG
-_DEFAULT_RUN_CONFIG = 'run_config_deepfault.json'  # _DEEPFAULT_RUN_CONFIG
+#_DEFAULT_RUN_CONFIG = 'run_config_deepfault.json'  # _DEEPFAULT_RUN_CONFIG
 
 
 _TEMP_DIR = './temp/'
@@ -203,6 +203,7 @@ class BenchmarkingTasks(unittest.TestCase):
     def test_OS_Support(self):
         # print self._os #Linux: Linux Mac: Darwin Windows: Windows
         assert self.language in self._languages,"Not support in this OS: " + str(self._os)
+        print(platform.platform())
 
 def get_tests():
     #task_funcs = ['task_1', 'task_2_1', 'task_2_2', 'task_2_3', 'task_3', 'task_4', 'task_5', 'task_6', 'task_7']

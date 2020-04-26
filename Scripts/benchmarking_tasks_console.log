@@ -2132,3 +2132,275 @@ Executing Benchmakring Tasks one by one....
 2020-04-25 01:55:42,497 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
 2020-04-25 01:55:42,497 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
 2020-04-25 01:55:42,497 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-04-25 01:57:00,255 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 77.7575030327 Seconds
+2020-04-25 01:57:00,255 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 01:57:00,255 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-25 01:57:00,256 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-04-25 01:57:00,256 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-04-25 01:58:06,377 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 66.1203482151 Seconds
+2020-04-25 01:58:06,378 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-04-25 01:58:06,378 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-25 01:58:06,379 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-04-25 01:58:06,379 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 6.91413879395e-06 Seconds
+2020-04-25 01:58:06,379 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-04-25 01:58:06,380 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-25 01:58:06,380 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-04-25 01:58:06,380 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 4.05311584473e-06 Seconds
+2020-04-25 01:58:06,381 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-04-25 01:58:06,381 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-25 01:58:06,381 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-04-25 01:58:06,384 - root - INFO - Total Execution Time taken to run all the commands :159.282433987 Seconds
+2020-04-25 01:58:06,388 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-04-25 02:00:35,522 - root - WARNING - Output Config :: Already Exist!
+2020-04-25 02:00:35,524 - root - INFO - 
+
+2020-04-25 02:00:35,524 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-25 02:00:35,524 - root - INFO - Total 5 commands to execute for Benchmarking!
+
+
+2020-04-25 02:00:35,535 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-25 02:00:49,450 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 13.9139938354 Seconds
+2020-04-25 02:00:49,450 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 02:00:49,450 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-25 02:00:49,450 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 gen_diff.py 2 0.1 10 20 50 0
+2020-04-25 02:01:07,763 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 18.3124148846 Seconds
+2020-04-25 02:01:07,763 - root - INFO - Executing DL Testing tool on default Models run dataset_type : texts
+2020-04-25 02:01:07,763 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/PDF/
+2020-04-25 02:01:07,763 - root - INFO - Executing DL Testing tool on default Models run command_3 : python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-25 02:01:11,345 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 3.58108782768 Seconds
+2020-04-25 02:01:11,345 - root - INFO - Executing DL Testing tool on default Models run dataset_type : self_driving
+2020-04-25 02:01:11,345 - root - INFO - Executing DL Testing tool on default Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-25 02:01:11,345 - root - INFO - Executing DL Testing tool on default Models run path_4 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/ImageNet
+2020-04-25 02:01:11,345 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 02:01:11,345 - root - INFO - Executing DL Testing tool on default Models run command_4 : python2.7 gen_diff.py occl 1 0.1 10 20 50 0
+2020-04-25 02:19:59,807 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1128.46028996 Seconds
+2020-04-25 02:19:59,809 - root - INFO - Executing DL Testing tool on default Models run dataset_type : malware
+2020-04-25 02:19:59,810 - root - INFO - Executing DL Testing tool on default Models run path_5 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Drebin
+2020-04-25 02:19:59,810 - root - INFO - Executing DL Testing tool on default Models run command_5 : python2.7 gen_diff.py 1 0.5 20 50 0
+2020-04-25 02:20:07,373 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 7.56301808357 Seconds
+2020-04-25 02:20:07,375 - root - INFO - Total Execution Time taken to run all the commands :1171.83820105 Seconds
+2020-04-25 02:20:07,379 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-04-25 02:26:20,460 - root - WARNING - Output Config :: Already Exist!
+2020-04-25 02:26:20,463 - root - INFO - 
+
+2020-04-25 02:26:20,464 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-25 02:26:20,465 - root - INFO - Total 5 commands to execute for Benchmarking!
+
+
+2020-04-25 02:26:20,470 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-25 02:26:30,837 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 10.3666570187 Seconds
+2020-04-25 02:26:30,837 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 02:26:30,837 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-25 02:26:30,838 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 gen_diff.py 2 0.1 10 20 50 0
+2020-04-25 02:26:48,826 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 17.9886229038 Seconds
+2020-04-25 02:26:48,827 - root - INFO - Executing DL Testing tool on default Models run dataset_type : texts
+2020-04-25 02:26:48,827 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/PDF/
+2020-04-25 02:26:48,827 - root - INFO - Executing DL Testing tool on default Models run command_3 : python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-25 02:26:52,469 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 3.64159917831 Seconds
+2020-04-25 02:26:52,469 - root - INFO - Executing DL Testing tool on default Models run dataset_type : self_driving
+2020-04-25 02:26:52,469 - root - INFO - Executing DL Testing tool on default Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-25 02:26:52,469 - root - INFO - Executing DL Testing tool on default Models run path_4 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/ImageNet
+2020-04-25 02:26:52,469 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 02:26:52,469 - root - INFO - Executing DL Testing tool on default Models run command_4 : python2.7 gen_diff.py occl 1 0.1 10 20 50 0
+2020-04-25 02:29:18,061 - root - WARNING - Output Config :: Already Exist!
+2020-04-25 02:29:18,063 - root - INFO - 
+
+2020-04-25 02:29:18,063 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-25 02:29:18,063 - root - INFO - Total 5 commands to execute for Benchmarking!
+
+
+2020-04-25 02:29:18,067 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0
+2020-04-25 02:29:32,219 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 14.1513810158 Seconds
+2020-04-25 02:29:32,221 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 02:29:32,221 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST
+2020-04-25 02:29:32,221 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 gen_diff.py 2 0.1 10 20 50 0
+2020-04-25 02:29:53,555 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 21.3341879845 Seconds
+2020-04-25 02:29:53,557 - root - INFO - Executing DL Testing tool on default Models run dataset_type : texts
+2020-04-25 02:29:53,557 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/PDF/
+2020-04-25 02:29:53,557 - root - INFO - Executing DL Testing tool on default Models run command_3 : python2.7 gen_diff.py light 1 0.1 10 20 50 0
+2020-04-25 02:30:03,016 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 9.45862102509 Seconds
+2020-04-25 02:30:03,018 - root - INFO - Executing DL Testing tool on default Models run dataset_type : self_driving
+2020-04-25 02:30:03,018 - root - INFO - Executing DL Testing tool on default Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Driving
+2020-04-25 02:30:03,019 - root - INFO - Executing DL Testing tool on default Models run path_4 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/ImageNet
+2020-04-25 02:30:03,019 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 02:30:03,019 - root - INFO - Executing DL Testing tool on default Models run command_4 : python2.7 gen_diff.py occl 1 0.1 10 20 50 0
+2020-04-25 02:43:36,324 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 813.30419302 Seconds
+2020-04-25 02:43:36,328 - root - INFO - Executing DL Testing tool on default Models run dataset_type : malware
+2020-04-25 02:43:36,329 - root - INFO - Executing DL Testing tool on default Models run path_5 : /Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/Drebin
+2020-04-25 02:43:36,329 - root - INFO - Executing DL Testing tool on default Models run command_5 : python2.7 gen_diff.py 1 0.5 20 50 0
+2020-04-25 02:43:42,504 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 6.1750330925 Seconds
+2020-04-25 02:43:42,515 - root - INFO - Total Execution Time taken to run all the commands :864.438571215 Seconds
+2020-04-25 02:43:42,520 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-04-25 02:50:12,646 - root - WARNING - Output Config :: Already Exist!
+2020-04-25 02:50:12,650 - root - INFO - 
+
+2020-04-25 02:50:12,650 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-25 02:50:12,650 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-25 02:50:12,657 - root - INFO - Executing DL Testing tool on default Models run command_1 : python run.py -lsa
+2020-04-25 02:53:10,829 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 178.171238184 Seconds
+2020-04-25 02:53:10,830 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 02:53:10,830 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/sadl-master
+2020-04-25 02:53:10,830 - root - INFO - Executing DL Testing tool on default Models run command_2 : python run.py -dsa
+2020-04-25 03:08:41,176 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 930.335366011 Seconds
+2020-04-25 03:08:41,178 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 03:08:41,178 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/sadl-master
+2020-04-25 03:08:41,180 - root - INFO - Total Execution Time taken to run all the commands :1108.52183914 Seconds
+2020-04-25 03:08:41,186 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-04-25 03:21:58,349 - root - WARNING - Output Config :: Already Exist!
+2020-04-25 03:21:58,358 - root - INFO - 
+
+2020-04-25 03:21:58,358 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-25 03:21:58,359 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-25 03:21:58,364 - root - INFO - Executing DL Testing tool on default Models run command_1 : python gen_diff.py [2] 0.5 5 0602 5 model1
+2020-04-25 03:22:04,457 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 6.09218192101 Seconds
+2020-04-25 03:22:04,457 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 03:22:04,457 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DLFuzz-master/MNIST
+2020-04-25 03:22:04,457 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 gen_diff.py [2] 0.25 10 0602 3 vgg16
+2020-04-25 03:28:18,829 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 374.371701002 Seconds
+2020-04-25 03:28:18,831 - root - INFO - Executing DL Testing tool on default Models run dataset_type : texts
+2020-04-25 03:28:18,832 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DLFuzz-master/ImageNet
+2020-04-25 03:28:18,834 - root - INFO - Total Execution Time taken to run all the commands :380.467894077 Seconds
+2020-04-25 03:28:18,838 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-04-25 03:29:49,214 - root - WARNING - Output Config :: Already Exist!
+2020-04-25 03:29:49,223 - root - INFO - 
+
+2020-04-25 03:29:49,223 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-25 03:29:49,223 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-25 03:29:49,234 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-04-25 03:30:08,811 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 19.5766420364 Seconds
+2020-04-25 03:30:08,813 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 03:30:08,814 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-25 03:30:08,814 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-04-25 03:31:05,699 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 56.8852200508 Seconds
+2020-04-25 03:31:05,701 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 03:31:05,702 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-25 03:31:05,702 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-04-25 03:31:05,702 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-04-25 03:32:08,876 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 63.1734030247 Seconds
+2020-04-25 03:32:08,878 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-04-25 03:32:08,878 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-25 03:32:08,878 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-04-25 03:32:08,879 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 5.00679016113e-06 Seconds
+2020-04-25 03:32:08,879 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-04-25 03:32:08,879 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-25 03:32:08,879 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-04-25 03:32:08,879 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 3.09944152832e-06 Seconds
+2020-04-25 03:32:08,879 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-04-25 03:32:08,880 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-25 03:32:08,880 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-04-25 03:32:08,881 - root - INFO - Total Execution Time taken to run all the commands :139.645384073 Seconds
+2020-04-25 03:32:08,886 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-04-25 03:33:21,801 - root - WARNING - Output Config :: Already Exist!
+2020-04-25 03:33:21,802 - root - INFO - 
+
+2020-04-25 03:33:21,802 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-25 03:33:21,803 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-25 03:33:21,807 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 gen_diff.py [2] 0.5 5 0602 5 model1
+2020-04-25 03:34:48,086 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 86.2788910866 Seconds
+2020-04-25 03:34:48,087 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-25 03:34:48,087 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DLFuzz-master/MNIST
+2020-04-25 03:34:48,087 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 gen_diff.py [2] 0.25 10 0602 3 vgg16
+2020-04-25 03:42:23,795 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 455.707231045 Seconds
+2020-04-25 03:42:23,797 - root - INFO - Executing DL Testing tool on default Models run dataset_type : texts
+2020-04-25 03:42:23,797 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DLFuzz-master/ImageNet
+2020-04-25 03:42:23,799 - root - INFO - Total Execution Time taken to run all the commands :541.990837097 Seconds
+2020-04-25 03:42:23,828 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-04-26 11:48:53,076 - root - WARNING - Output Config :: Already Exist!
+2020-04-26 11:48:53,083 - root - INFO - 
+
+2020-04-26 11:48:53,083 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-26 11:48:53,083 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-26 11:48:53,111 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-04-26 11:49:15,162 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 22.0495829582 Seconds
+2020-04-26 11:49:15,162 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-26 11:49:15,163 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-26 11:49:15,163 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-04-26 11:50:35,814 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 80.651045084 Seconds
+2020-04-26 11:50:35,818 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-26 11:50:35,818 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-26 11:50:35,818 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-04-26 11:50:35,818 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-04-26 11:51:51,069 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 75.250180006 Seconds
+2020-04-26 11:51:51,070 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-04-26 11:51:51,070 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-26 11:51:51,070 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-04-26 11:51:51,070 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 4.05311584473e-06 Seconds
+2020-04-26 11:51:51,070 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-04-26 11:51:51,071 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-26 11:51:51,071 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-04-26 11:51:51,071 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 3.09944152832e-06 Seconds
+2020-04-26 11:51:51,071 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-04-26 11:51:51,071 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-04-26 11:51:51,071 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-04-26 11:51:51,073 - root - INFO - Total Execution Time taken to run all the commands :177.959795952 Seconds
+2020-04-26 11:51:51,075 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-04-26 12:04:21,527 - root - WARNING - Output Config :: Already Exist!
+2020-04-26 12:04:21,530 - root - INFO - 
+
+2020-04-26 12:04:21,531 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-26 12:04:21,531 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-26 12:04:21,541 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 gen_diff.py [2] 0.5 5 0602 5 model1
+2020-04-26 12:06:04,799 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 103.256994009 Seconds
+2020-04-26 12:06:04,801 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-26 12:06:04,801 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DLFuzz-master/MNIST
+2020-04-26 12:06:04,801 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 gen_diff.py [2] 0.25 10 0602 3 vgg16
+2020-04-26 12:14:01,396 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 476.594049931 Seconds
+2020-04-26 12:14:01,400 - root - INFO - Executing DL Testing tool on default Models run dataset_type : texts
+2020-04-26 12:14:01,401 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DLFuzz-master/ImageNet
+2020-04-26 12:14:01,403 - root - INFO - Total Execution Time taken to run all the commands :579.860475063 Seconds
+2020-04-26 12:14:01,407 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-04-26 17:45:09,338 - root - WARNING - Output Config :: Already Exist!
+2020-04-26 17:45:09,342 - root - INFO - 
+
+2020-04-26 17:45:09,342 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-04-26 17:45:09,342 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-04-26 17:45:09,351 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 gen_diff.py [2] 0.5 5 0602 5 model1
+2020-04-26 17:46:37,370 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 88.0186910629 Seconds
+2020-04-26 17:46:37,371 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-04-26 17:46:37,371 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DLFuzz-master/MNIST
+2020-04-26 17:46:37,371 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 gen_diff.py [2] 0.25 10 0602 3 vgg16
+2020-04-26 17:53:53,490 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 436.117846012 Seconds
+2020-04-26 17:53:53,493 - root - INFO - Executing DL Testing tool on default Models run dataset_type : texts
+2020-04-26 17:53:53,494 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DLFuzz-master/ImageNet
+2020-04-26 17:53:53,496 - root - INFO - Total Execution Time taken to run all the commands :524.143033028 Seconds
+2020-04-26 17:53:53,501 - root - INFO - 
+Executing Benchmakring Tasks one by one....

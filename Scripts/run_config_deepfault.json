@@ -45,7 +45,7 @@
    "manual_check": {
       "model_selection" : "Yes",
       "retraining" : "Yes",
-      "differential_testing" : "Yes"
+      "differential_testing" : "No"
    },
    "datasets_classification": {
       "images" : "Yes",
