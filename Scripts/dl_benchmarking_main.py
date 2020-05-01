@@ -190,7 +190,7 @@ def _edit_config():
     print "Edit the run Config of the DL testing tool to Execute Benchmarking Tasks..."
     sleep(1)
     #os.chdir(r"../../")
-    command_2 = 'gvim run_config1.json'
+    command_2 = 'gvim run_config_default.json'
     #print command_1
     os.system(command_2)
 

@@ -42,9 +42,9 @@ logger.setLevel(logging.INFO)
 # RUN CONFIG for DL TESTING TOOLS
 #_DEFAULT_RUN_CONFIG = 'run_config1.json'
 #_DEFAULT_RUN_CONFIG = 'run_config_deepX.json'      # _DEEPXPLORE_RUN_CONFIG
-_DEFAULT_RUN_CONFIG = 'run_config_dlfuzz.json'     # _DLFUZZ_RUN_CONFIG
+#_DEFAULT_RUN_CONFIG = 'run_config_dlfuzz.json'     # _DLFUZZ_RUN_CONFIG
 #_DEFAULT_RUN_CONFIG = 'run_config_sadl.json'       # _SADL_RUN_CONFIG
-#_DEFAULT_RUN_CONFIG = 'run_config_deepfault.json'  # _DEEPFAULT_RUN_CONFIG
+_DEFAULT_RUN_CONFIG = 'run_config_deepfault.json'  # _DEEPFAULT_RUN_CONFIG
 
 
 _TEMP_DIR = './temp/'
