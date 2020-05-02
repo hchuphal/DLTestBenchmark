@@ -2404,3 +2404,442 @@ Executing Benchmakring Tasks one by one....
 2020-04-26 17:53:53,496 - root - INFO - Total Execution Time taken to run all the commands :524.143033028 Seconds
 2020-04-26 17:53:53,501 - root - INFO - 
 Executing Benchmakring Tasks one by one....
+2020-05-01 13:02:09,875 - root - WARNING - Output Config :: Already Exist!
+2020-05-01 13:03:27,644 - root - WARNING - Output Config :: Already Exist!
+2020-05-01 13:03:27,649 - root - INFO - 
+
+2020-05-01 13:03:27,650 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-01 13:03:27,650 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-01 13:03:27,667 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:07:06,030 - root - WARNING - Output Config :: Already Exist!
+2020-05-01 13:07:06,038 - root - INFO - 
+
+2020-05-01 13:07:06,038 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-01 13:07:06,038 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-01 13:07:06,050 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:07:27,573 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 21.522162199 Seconds
+2020-05-01 13:07:27,575 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-01 13:07:27,576 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-01 13:07:27,576 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:08:36,256 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 68.679472208 Seconds
+2020-05-01 13:08:36,257 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-01 13:08:36,258 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-01 13:08:36,258 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-01 13:08:36,259 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:09:41,541 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 65.2815001011 Seconds
+2020-05-01 13:09:41,542 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-01 13:09:41,542 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-01 13:09:41,542 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:09:41,543 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 5.96046447754e-06 Seconds
+2020-05-01 13:09:41,543 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-01 13:09:41,543 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-01 13:09:41,544 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:09:41,544 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 5.96046447754e-06 Seconds
+2020-05-01 13:09:41,544 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-01 13:09:41,544 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-01 13:09:41,545 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-01 13:09:41,547 - root - INFO - Total Execution Time taken to run all the commands :155.494517088 Seconds
+2020-05-01 13:09:41,551 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-01 13:13:50,365 - root - WARNING - Output Config :: Already Exist!
+2020-05-01 13:13:50,370 - root - INFO - 
+
+2020-05-01 13:13:50,371 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-01 13:13:50,371 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-01 13:13:50,384 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:15:57,380 - root - WARNING - Output Config :: Already Exist!
+2020-05-01 13:15:57,383 - root - INFO - 
+
+2020-05-01 13:15:57,383 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-01 13:15:57,383 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-01 13:15:57,397 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:16:20,544 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 23.1467821598 Seconds
+2020-05-01 13:16:20,545 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-01 13:16:20,546 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-01 13:16:20,546 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:17:22,086 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 61.5394179821 Seconds
+2020-05-01 13:17:22,088 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-01 13:17:22,088 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-01 13:17:22,088 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-01 13:17:22,088 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:18:40,452 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 78.3633999825 Seconds
+2020-05-01 13:18:40,452 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-01 13:18:40,452 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-01 13:18:40,452 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:18:40,453 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 5.00679016113e-06 Seconds
+2020-05-01 13:18:40,453 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-01 13:18:40,453 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-01 13:18:40,453 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-01 13:18:40,453 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 5.00679016113e-06 Seconds
+2020-05-01 13:18:40,453 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-01 13:18:40,453 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-01 13:18:40,454 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-01 13:18:40,456 - root - INFO - Total Execution Time taken to run all the commands :163.056910038 Seconds
+2020-05-01 13:18:40,461 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-02 14:11:22,616 - root - WARNING - Output Config :: Already Exist!
+2020-05-02 14:11:22,641 - root - INFO - 
+
+2020-05-02 14:11:22,641 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-02 14:11:22,642 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-02 14:11:22,646 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 14:11:51,317 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 28.6701059341 Seconds
+2020-05-02 14:11:51,317 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 14:11:51,318 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 14:11:51,318 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 14:12:49,450 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 58.1311309338 Seconds
+2020-05-02 14:12:49,452 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 14:12:49,453 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 14:12:49,453 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-02 14:12:49,453 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 14:14:27,429 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 97.9741940498 Seconds
+2020-05-02 14:14:27,432 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 14:14:27,433 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 14:14:27,433 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 14:14:27,433 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 6.91413879395e-06 Seconds
+2020-05-02 14:14:27,433 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-02 14:14:27,434 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 14:14:27,434 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 14:14:27,434 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 5.96046447754e-06 Seconds
+2020-05-02 14:14:27,434 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-02 14:14:27,434 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 14:14:27,434 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 14:14:27,436 - root - INFO - Total Execution Time taken to run all the commands :184.788553953 Seconds
+2020-05-02 14:14:27,440 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-02 15:59:34,246 - root - WARNING - Output Config :: Already Exist!
+2020-05-02 15:59:34,256 - root - INFO - 
+
+2020-05-02 15:59:34,257 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-02 15:59:34,258 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-02 15:59:34,264 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 15:59:38,386 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 4.1197810173 Seconds
+2020-05-02 15:59:38,386 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 15:59:38,387 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 15:59:38,387 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 15:59:39,859 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.47176885605 Seconds
+2020-05-02 15:59:39,859 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 15:59:39,859 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 15:59:39,860 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-02 15:59:39,860 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 15:59:41,594 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.73369884491 Seconds
+2020-05-02 15:59:41,596 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 15:59:41,596 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 15:59:41,596 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 15:59:41,596 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 5.96046447754e-06 Seconds
+2020-05-02 15:59:41,597 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-02 15:59:41,597 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 15:59:41,597 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 15:59:41,598 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.50203704834e-05 Seconds
+2020-05-02 15:59:41,598 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-02 15:59:41,599 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 15:59:41,600 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 15:59:41,601 - root - INFO - Total Execution Time taken to run all the commands :7.33580613136 Seconds
+2020-05-02 15:59:41,603 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-02 16:00:15,868 - root - WARNING - Output Config :: Already Exist!
+2020-05-02 16:00:15,870 - root - INFO - 
+
+2020-05-02 16:00:15,870 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-02 16:00:15,870 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-02 16:00:15,875 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:00:18,621 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 2.74494099617 Seconds
+2020-05-02 16:00:18,621 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:00:18,622 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:00:18,622 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:00:20,205 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.58279585838 Seconds
+2020-05-02 16:00:20,206 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:00:20,206 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:00:20,206 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-02 16:00:20,206 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:00:21,901 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.69498515129 Seconds
+2020-05-02 16:00:21,901 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:00:21,901 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:00:21,902 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:00:21,903 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 3.19480895996e-05 Seconds
+2020-05-02 16:00:21,904 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-02 16:00:21,904 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:00:21,905 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:00:21,905 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 5.96046447754e-06 Seconds
+2020-05-02 16:00:21,905 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-02 16:00:21,906 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:00:21,906 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:00:21,908 - root - INFO - Total Execution Time taken to run all the commands :6.03030514717 Seconds
+2020-05-02 16:00:21,909 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-02 16:01:19,676 - root - WARNING - Output Config :: Already Exist!
+2020-05-02 16:01:19,679 - root - INFO - 
+
+2020-05-02 16:01:19,679 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-02 16:01:19,679 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-02 16:01:19,689 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:01:22,245 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 2.55560612679 Seconds
+2020-05-02 16:01:22,245 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:01:22,245 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:01:22,246 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:01:23,723 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.4764559269 Seconds
+2020-05-02 16:01:23,723 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:01:23,724 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:01:23,724 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-02 16:01:23,724 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:01:25,411 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.68734192848 Seconds
+2020-05-02 16:01:25,411 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:01:25,412 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:01:25,412 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:01:25,412 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 4.05311584473e-06 Seconds
+2020-05-02 16:01:25,412 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-02 16:01:25,412 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:01:25,412 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:01:25,412 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 4.05311584473e-06 Seconds
+2020-05-02 16:01:25,412 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-02 16:01:25,412 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:01:25,412 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:01:25,417 - root - INFO - Total Execution Time taken to run all the commands :5.72822403908 Seconds
+2020-05-02 16:01:25,419 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-02 16:02:02,584 - root - WARNING - Output Config :: Already Exist!
+2020-05-02 16:02:02,588 - root - INFO - 
+
+2020-05-02 16:02:02,588 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-02 16:02:02,588 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-02 16:02:02,599 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:02:05,388 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 2.78855776787 Seconds
+2020-05-02 16:02:05,389 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:02:05,389 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:02:05,389 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:02:07,863 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 2.47416996956 Seconds
+2020-05-02 16:02:07,864 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:02:07,864 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:02:07,864 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-02 16:02:07,864 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:02:10,005 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 2.14106988907 Seconds
+2020-05-02 16:02:10,006 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:02:10,006 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:02:10,006 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:02:10,007 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 5.96046447754e-06 Seconds
+2020-05-02 16:02:10,007 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-02 16:02:10,007 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:02:10,007 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:02:10,008 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.09672546387e-05 Seconds
+2020-05-02 16:02:10,008 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-02 16:02:10,008 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:02:10,009 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:02:10,010 - root - INFO - Total Execution Time taken to run all the commands :7.40968203545 Seconds
+2020-05-02 16:02:10,012 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-02 16:05:16,731 - root - WARNING - Output Config :: Already Exist!
+2020-05-02 16:05:16,734 - root - INFO - 
+
+2020-05-02 16:05:16,734 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-02 16:05:16,734 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-02 16:05:16,739 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:05:21,453 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 4.7128469944 Seconds
+2020-05-02 16:05:21,453 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:05:21,453 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:05:21,453 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:05:22,935 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.48219180107 Seconds
+2020-05-02 16:05:22,936 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:05:22,936 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:05:22,936 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-02 16:05:22,936 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:05:24,528 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.59161996841 Seconds
+2020-05-02 16:05:24,529 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:05:24,530 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:05:24,530 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:05:24,531 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 7.86781311035e-06 Seconds
+2020-05-02 16:05:24,531 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-02 16:05:24,531 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:05:24,532 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:05:24,532 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 6.91413879395e-06 Seconds
+2020-05-02 16:05:24,532 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-02 16:05:24,532 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:05:24,533 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:05:24,554 - root - INFO - Total Execution Time taken to run all the commands :7.81453895569 Seconds
+2020-05-02 16:05:24,558 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-02 16:06:54,989 - root - WARNING - Output Config :: Already Exist!
+2020-05-02 16:06:54,992 - root - INFO - 
+
+2020-05-02 16:06:54,992 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-02 16:06:54,992 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-02 16:06:54,998 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:06:56,493 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.4948618412 Seconds
+2020-05-02 16:06:56,494 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:06:56,494 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:06:56,495 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:06:58,020 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.52483415604 Seconds
+2020-05-02 16:06:58,020 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:06:58,020 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:06:58,020 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-02 16:06:58,020 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:06:59,537 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.51615905762 Seconds
+2020-05-02 16:06:59,537 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:06:59,537 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:06:59,538 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:06:59,538 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 1.21593475342e-05 Seconds
+2020-05-02 16:06:59,538 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-02 16:06:59,538 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:06:59,539 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:06:59,539 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 3.09944152832e-06 Seconds
+2020-05-02 16:06:59,539 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-02 16:06:59,539 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:06:59,539 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:06:59,540 - root - INFO - Total Execution Time taken to run all the commands :4.54151201248 Seconds
+2020-05-02 16:06:59,542 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-02 16:09:57,461 - root - WARNING - Output Config :: Already Exist!
+2020-05-02 16:09:57,469 - root - INFO - 
+
+2020-05-02 16:09:57,469 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-02 16:09:57,469 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-02 16:09:57,472 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:10:07,547 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 10.0750110149 Seconds
+2020-05-02 16:10:07,547 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:10:07,548 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:10:07,548 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:10:10,029 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 2.48072981834 Seconds
+2020-05-02 16:10:10,029 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:10:10,029 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:10:10,029 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-02 16:10:10,029 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:10:12,516 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 2.48618102074 Seconds
+2020-05-02 16:10:12,516 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:10:12,516 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:10:12,516 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:10:12,516 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 4.05311584473e-06 Seconds
+2020-05-02 16:10:12,516 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-02 16:10:12,516 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:10:12,517 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:10:12,517 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 2.86102294922e-06 Seconds
+2020-05-02 16:10:12,517 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-02 16:10:12,517 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:10:12,517 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:10:12,517 - root - INFO - Total Execution Time taken to run all the commands :15.0452108383 Seconds
+2020-05-02 16:10:12,518 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-02 16:11:26,247 - root - WARNING - Output Config :: Already Exist!
+2020-05-02 16:11:26,250 - root - INFO - 
+
+2020-05-02 16:11:26,250 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-02 16:11:26,251 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-02 16:11:26,256 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:11:44,236 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 17.9792251587 Seconds
+2020-05-02 16:11:44,238 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:11:44,238 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:11:44,239 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:13:47,709 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 123.468769073 Seconds
+2020-05-02 16:13:47,711 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:13:47,713 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:13:47,714 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-02 16:13:47,717 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:15:51,411 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 123.691487074 Seconds
+2020-05-02 16:15:51,413 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:15:51,414 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:15:51,414 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:15:51,417 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8.82148742676e-06 Seconds
+2020-05-02 16:15:51,418 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-02 16:15:51,419 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:15:51,436 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:15:51,436 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 8.82148742676e-06 Seconds
+2020-05-02 16:15:51,436 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-02 16:15:51,437 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:15:51,437 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:15:51,444 - root - INFO - Total Execution Time taken to run all the commands :265.180938005 Seconds
+2020-05-02 16:15:51,448 - root - INFO - 
+Executing Benchmakring Tasks one by one....
+2020-05-02 16:25:57,092 - root - WARNING - Output Config :: Already Exist!
+2020-05-02 16:25:57,095 - root - INFO - 
+
+2020-05-02 16:25:57,095 - root - INFO - 
+********* Tasks Execution Started ...... *********
+2020-05-02 16:25:57,096 - root - INFO - Total 2 commands to execute for Benchmarking!
+
+
+2020-05-02 16:25:57,107 - root - INFO - Executing DL Testing tool on default Models run command_1 : python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:26:30,421 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 33.3123850822 Seconds
+2020-05-02 16:26:30,424 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:26:30,425 - root - INFO - Executing DL Testing tool on default Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:26:30,426 - root - INFO - Executing DL Testing tool on default Models run command_2 : python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:29:38,485 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 188.058413982 Seconds
+2020-05-02 16:29:38,489 - root - INFO - Executing DL Testing tool on default Models run dataset_type : images
+2020-05-02 16:29:38,490 - root - INFO - Executing DL Testing tool on default Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:29:38,492 - root - INFO - Total 2 commands to execute for Benchmarking Models!
+
+
+2020-05-02 16:29:38,493 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_1 : python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:32:27,852 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 169.357393026 Seconds
+2020-05-02 16:32:27,855 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:32:27,856 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_1 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:32:27,857 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_2 : python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:32:27,858 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 9.05990600586e-06 Seconds
+2020-05-02 16:32:27,859 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : self_driving
+2020-05-02 16:32:27,859 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_2 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:32:27,859 - root - INFO - Executing DL Testing tool on Benchmarking Models run command_3 : python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10
+2020-05-02 16:32:27,859 - root - WARNING - Benchmarking Profiling :  ' Time to run the  testing command :' took: 7.86781311035e-06 Seconds
+2020-05-02 16:32:27,860 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : texts
+2020-05-02 16:32:27,860 - root - INFO - Executing DL Testing tool on Benchmarking Models run path_3 : /Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master
+2020-05-02 16:32:27,860 - root - INFO - Executing DL Testing tool on Benchmarking Models run dataset_type : images
+2020-05-02 16:32:27,865 - root - INFO - Total Execution Time taken to run all the commands :390.753587961 Seconds
+2020-05-02 16:32:27,868 - root - INFO - 
+Executing Benchmakring Tasks one by one....

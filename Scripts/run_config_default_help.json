@@ -1,0 +1,63 @@
+// Please follow // comments for each json parameter to fill in the run and output config
+
+{
+   "toolName": "",               // DL Testing Tool name                  
+   "description": "",            // description of the tool
+   "authors": "",                // Authors name
+   "language": "pass",               //**Tools run and implementation programming lanaguage used                       
+   "publication": "",
+   "path_to_script" : "",                    
+   "commands": [                 // Total commands in list, can be extented if more than 7 run commmadns are required
+      { "path_1":"pass",         // path of script to run the command 1
+      "command_1": "pass",       // single command for same type of dataset or a different dataset that tool should run for benchmakring
+      "dataset_type": "pass"},   // type of dataset for command 1
+      {"path_2":"pass",          // and so on .. as done for command 1 else leave it witgh "pass"
+      "command_2": "pass",
+      "dataset_type": "pass"},
+      {"path_3":"pass",
+      "command_3": "pass",
+      "dataset_type": "pass"},
+      {"path_4":"pass",
+      "command_4": "pass",
+      "dataset_type": "pass"},
+      {"path_5":"pass",
+      "command_5": "pass",
+      "dataset_type": "pass"},
+      {"path_6":"pass",
+      "command_6": "pass",
+      "dataset_type": "pass"},
+      {"path_7":"pass",
+      "command_7": "pass",
+      "dataset_type": "pass"}      // extend list if more commands are supported
+   ],
+      "benchmarking_commands": [    // commands to run benchmakring models ( 6 models, lolcated inside models folder)
+      { "path_1":"pass",            // follow the same sequence as before but with benchmakring models 
+      "command_1": "pass",          // command using benchmarking model
+      "dataset_type": "pass"},      // dataset type supported by benchmarking model 
+      {"path_2":"pass",             // and so on .. as done for command 1 else leave it witgh "pass"
+      "command_2": "pass",
+      "dataset_type": "pass"},
+      { "path_3":"pass",
+      "command_3": "pass",
+      "dataset_type": "pass"},
+      {"path_4":"pass",
+      "command_4": "pass",
+      "dataset_type": "pass"}       // can be extented if more variaions are needed to run
+   ],
+   "manual_check": {                // manual check based in Tools support and capabilities
+      "model_selection" : "No",     // Default Value is No, put as yes if model selection is suuported
+      "retraining" : "No",          // Default Value is No, put as yes if retraining is suuported
+      "differential_testing" : "No"// Default Value is No, put as yes if differential testing (testing with more than 1 model) is suuported
+   },
+   "datasets_classification": {  // manual check based in Tools support and capabilities for different dataset classification
+      "images" : "No",           // Default Value is No, put as yes if images classifications is suuported
+      "self_driving" : "No",     // Default Value is No, put as yes if self driving  classifications is suuported
+      "texts" : "No"             // Default Value is No, put as yes if texts classifications is suuported
+   },
+   "output_config" : {           // manual check based in Tools support and capabilities for different dataset classification
+      "output_saved" : "No",        // Default Value is No, put as yes if tool generates any form of output
+      "output_default_path" : "./output/",
+      "postProcessingCommand" : "None",   // Default Value is None, put as yes if postprocessing of the generated output is supported
+      "parser_path" : "_path_"            // If postProcessingCommand is yes, path to the parser tool or script
+   }
+}
