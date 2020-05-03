@@ -1,4 +1,4 @@
-// Please follow // comments for each json parameter to fill in the run and output config
+// Please follow // comments for each json parameter to fill in the run and output config, leave with 'pass' if not sure
 
 {
    "toolName": "",               // DL Testing Tool name                  
@@ -8,9 +8,9 @@
    "publication": "",
    "path_to_script" : "",                    
    "commands": [                 // Total commands in list, can be extented if more than 7 run commmadns are required
-      { "path_1":"pass",         // path of script to run the command 1
+      { "path_1":"pass",         // path of the locations of the script /tool to run the command 1
       "command_1": "pass",       // single command for same type of dataset or a different dataset that tool should run for benchmakring
-      "dataset_type": "pass"},   // type of dataset for command 1
+      "dataset_type": "pass"},   // type of dataset for command 1 ( images, self_driving, texts)
       {"path_2":"pass",          // and so on .. as done for command 1 else leave it witgh "pass"
       "command_2": "pass",
       "dataset_type": "pass"},
@@ -30,7 +30,16 @@
       "command_7": "pass",
       "dataset_type": "pass"}      // extend list if more commands are supported
    ],
-      "benchmarking_commands": [    // commands to run benchmakring models ( 6 models, lolcated inside models folder)
+   "manual_check": {                // manual check based in Tools support and capabilities
+      "model_selection" : "No",     // Default Value is No, put as yes if model selection is suuported
+      "retraining" : "No",          // Default Value is No, put as yes if retraining is suuported
+      "differential_testing" : "No"// Default Value is No, put as yes if differential testing (testing with more than 1 model) is suuported
+   },
+   // if model_selection is possible (Yes) then fill out all run command as in previous commands but with benechmarking models based on type pf datasets
+   // moded 1 (images dataset) : ./model/Images_cifar10_1_512_leaky_relu_model1.h5
+   // model 2 (self_driving dataset): ./model/Self_Driving_CNN_model1.h5
+   // model 3 (texts dataset):   ./model/Text_babi_RNN_model1.h5
+   "benchmarking_commands": [       // commands to run benchmakring models by replacing the path of one of models 1, 2, 3 based on dataset
       { "path_1":"pass",            // follow the same sequence as before but with benchmakring models 
       "command_1": "pass",          // command using benchmarking model
       "dataset_type": "pass"},      // dataset type supported by benchmarking model 
@@ -44,18 +53,14 @@
       "command_4": "pass",
       "dataset_type": "pass"}       // can be extented if more variaions are needed to run
    ],
-   "manual_check": {                // manual check based in Tools support and capabilities
-      "model_selection" : "No",     // Default Value is No, put as yes if model selection is suuported
-      "retraining" : "No",          // Default Value is No, put as yes if retraining is suuported
-      "differential_testing" : "No"// Default Value is No, put as yes if differential testing (testing with more than 1 model) is suuported
-   },
+
    "datasets_classification": {  // manual check based in Tools support and capabilities for different dataset classification
       "images" : "No",           // Default Value is No, put as yes if images classifications is suuported
       "self_driving" : "No",     // Default Value is No, put as yes if self driving  classifications is suuported
       "texts" : "No"             // Default Value is No, put as yes if texts classifications is suuported
    },
-   "output_config" : {           // manual check based in Tools support and capabilities for different dataset classification
-      "output_saved" : "No",        // Default Value is No, put as yes if tool generates any form of output
+   "output_config" : {              // manual check based in Tools support and capabilities for different dataset classification
+      "output_saved" : "No",        // Default Value is No, put as yes if tool generates any form of output either on console or saved in a file
       "output_default_path" : "./output/",
       "postProcessingCommand" : "None",   // Default Value is None, put as yes if postprocessing of the generated output is supported
       "parser_path" : "_path_"            // If postProcessingCommand is yes, path to the parser tool or script
