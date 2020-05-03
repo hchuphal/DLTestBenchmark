@@ -1,4 +1,4 @@
-# Masters Thesis, Chalmers|GU, Gothenburg, Sweden, 2020
+# DLTestBenchmark Version 1.0, Chalmers|GU, Gothenburg, Sweden, 2020
 
 **Benchmarking Deep Learning Testing Techniques,**
 
@@ -54,11 +54,11 @@ https://www.overleaf.com/project/5df966e2bdb0ce0001befe5e
 
 # Task List
 - [x] Document Results
-- [x] 1st version of Benchmarking script
+- [x] Final version of Benchmarking script
 - [x] Task automation check
 - [x] run config check
-- [ ] Link all task
-- [ ] Script Results
+- [X] Link all task
+- [X] Script Results
 
 # -- Help
 - Python and Libs
