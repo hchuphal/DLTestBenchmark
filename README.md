@@ -1,4 +1,4 @@
-# DLTestBenchmark Version 1.0, Chalmers|GU, Gothenburg, SE 2020
+# DLTestBenchmark Tool, Chalmers|GU, Gothenburg, SE 2020
 
 **Benchmarking Deep Learning Testing Techniques,**
 
