@@ -143,11 +143,11 @@ https://www.overleaf.com/project/5df966e2bdb0ce0001befe5e
 _DEFAULT_RUN_CONFIG = 'run_config_sadl.json'       # _SADL_RUN_CONFIG
 
 ```
-# Flow :
+# Benchmark Steps :
 ![DL Benchmark Steps](./Scripts/flow.png)
 
 # Results
-![DL Benchmark Result Example](./Scripts/a1.png)
+![DL Benchmark Result Example](./Scripts/results.png)
 
 
  # end
