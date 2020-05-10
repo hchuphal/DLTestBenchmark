@@ -1,4 +1,4 @@
-# DLTestBenchmark Version 1.0, Chalmers|GU, Gothenburg, Sweden, 2020
+# DLTestBenchmark Version 1.0, Chalmers|GU, Gothenburg, SE 2020
 
 **Benchmarking Deep Learning Testing Techniques,**
 
@@ -144,10 +144,10 @@ _DEFAULT_RUN_CONFIG = 'run_config_sadl.json'       # _SADL_RUN_CONFIG
 
 ```
 # Flow :
-![image info](./scripts/flow.png)
+![DL Benchmark Steps](./Scripts/flow.png)
 
 # Results
-![image info](./scripts/a1.png)
+![DL Benchmark Result Example](./Scripts/a1.png)
 
 
  # end
