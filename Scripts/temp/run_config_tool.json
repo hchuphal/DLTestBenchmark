@@ -28,6 +28,11 @@
       "command_7": "pass",
       "dataset_type": "pass"}
    ],
+   "manual_check": {
+      "model_selection" : "Yes",
+      "retraining" : "Yes",
+      "differential_testing" : "No"
+   },
       "benchmarking_commands": [
       { "path_1":"/Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master",
       "command_1": "python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10",
@@ -42,11 +47,7 @@
       "command_4": "pass",
       "dataset_type": "images"}
    ],
-   "manual_check": {
-      "model_selection" : "Yes",
-      "retraining" : "Yes",
-      "differential_testing" : "No"
-   },
+
    "datasets_classification": {
       "images" : "Yes",
       "self_driving" : "No",

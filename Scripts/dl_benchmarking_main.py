@@ -114,7 +114,7 @@ def _main_menu():
     print Formats.WARNING + "2. Check Tool's Run Config " + Formats.ENDC
     print Formats.WARNING + "3. Install Requirements" + Formats.ENDC
     print Formats.WARNING + "4. Execute Benchmarking Tasks " + Formats.ENDC
-    print Formats.WARNING + "5. Benchmakring Tasks Info " + Formats.ENDC
+    print Formats.WARNING + "5. Benchmarking Tasks Info " + Formats.ENDC
     print Formats.WARNING + "6. Check System Configuration" + Formats.ENDC
     print Formats.WARNING + "7. Check Version of the tool and --Help?" + Formats.ENDC
     print Formats.WARNING + "8. EXIT " + Formats.ENDC
