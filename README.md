@@ -1,4 +1,4 @@
-# DLTestBenchmark Version 1.0, Chalmers|GU, Gothenburg, Sweden, 2020
+# DLTestBenchmark Tool, Chalmers|GU, Gothenburg, SE 2020
 
 **Benchmarking Deep Learning Testing Techniques,**
 
@@ -52,13 +52,12 @@ Enter an option to run the tool [ 1-8 ] = 3
 
 https://www.overleaf.com/project/5df966e2bdb0ce0001befe5e
 
-# Task List
-- [x] Document Results
-- [x] Final version of Benchmarking script
-- [x] Task automation check
-- [x] run config check
-- [X] Link all task
-- [X] Script Results
+# About the Benchmarking Tool
+- [x] Version. : 1.0
+- [x] Benchmarking models included
+- [x] Run and Configuration help file ( inside /script)
+- [x] Example Run and Configuration File
+- [X] Execution commands
 
 # -- Help
 - Python and Libs
@@ -72,19 +71,19 @@ https://www.overleaf.com/project/5df966e2bdb0ce0001befe5e
 # run_config.json
 ```json
 {
-   "toolName": "DeepXplore",                    
-   "description": "Whitebox DL testing tool",
-   "authors": "Din Lin",
+   "toolName": "DeepFault",                    
+   "description": "DeepFault: Fault Localization for Deep Neural Networks",
+   "authors": "Hasan Ferit Eniser, Simos Gerasimou, Alper Sen",
    "language": "python",                       
-   "publication": "2018", 
-   "path_to_script" : "/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master",                    
+   "publication": "2019",
+   "path_to_script" : "/Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master",                    
    "commands": [
-      { "path_1":"/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/MNIST",
-      "command_1": "python2.7 gen_diff.py occl -t 0 1.0 0.1 10 10 10 0",
+      { "path_1":"/Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master",
+      "command_1": "python2.7 run.py --model mnist_test_model_1_100 --dataset mnist -C 9 --approach tarantula --suspicious_num 10",
       "dataset_type": "images"},
-      {"path_2":"/Users/hchuphal/Desktop/github/thesis2020/Code/deepxplore-master/PDF/",
-      "command_2": "python2.7 gen_diff.py 2 0.1 10 20 50 0",
-      "dataset_type": "texts"},
+      {"path_2":"/Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master",
+      "command_2": "python2.7 run.py --model cifar10_test_model_1_512_leaky_relu --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10",
+      "dataset_type": "images"},
       {"path_3":"pass",
       "command_3": "pass",
       "dataset_type": "pass"},
@@ -102,18 +101,32 @@ https://www.overleaf.com/project/5df966e2bdb0ce0001befe5e
       "dataset_type": "pass"}
    ],
    "manual_check": {
-      "model_selection" : "No",
+      "model_selection" : "Yes",
       "retraining" : "Yes",
-      "differential_testing" : "Yes"
+      "differential_testing" : "No"
    },
+      "benchmarking_commands": [
+      { "path_1":"/Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master",
+      "command_1": "python2.7 run.py --model Images_cifar10_1_512_leaky_relu_model1 --dataset cifar10 -C 9 --approach tarantula --suspicious_num 10",
+      "dataset_type": "images"},
+      {"path_2":"/Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master",
+      "command_2": "python2.7 run.py --model Self_Driving_CNN_model1 --dataset nvidia -C 9 --approach tarantula --suspicious_num 10",
+      "dataset_type": "self_driving"},
+      { "path_3":"/Users/hchuphal/Desktop/github/thesis2020/Code/DeepFault-master",
+      "command_3": "python2.7 run.py --model Text_imdb_CNN_model2 --dataset imdb -C 9 --approach tarantula --suspicious_num 10",
+      "dataset_type": "texts"},
+      {"path_4":"pass",
+      "command_4": "pass",
+      "dataset_type": "images"}
+   ],
    "datasets_classification": {
       "images" : "Yes",
-      "self_driving" : "Yes",
+      "self_driving" : "No",
       "texts" : "No"
    },
    "output_config" : {
       "output_saved" : "Yes",
-      "output_default_path" : "_path_",
+      "output_default_path" : "./output/",
       "postProcessingCommand" : "None",
       "parser_path" : "_path_"
    }
@@ -130,6 +143,11 @@ https://www.overleaf.com/project/5df966e2bdb0ce0001befe5e
 _DEFAULT_RUN_CONFIG = 'run_config_sadl.json'       # _SADL_RUN_CONFIG
 
 ```
+# Benchmark Steps :
+![DL Benchmark Steps](./Scripts/flow.png)
+
+# Results
+![DL Benchmark Result Example](./Scripts/results.png)
 
 
  # end
